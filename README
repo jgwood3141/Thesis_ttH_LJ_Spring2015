@@ -1,0 +1,32 @@
+###
+### Setup Instructions
+###
+#
+# 1) MacTeX: https://tug.org/mactex/
+# this comes with the magic script "latexmk" that does the bibtex properly. You might have this already to get latex on your local machine.
+#
+# 2) Download "Skim": http://skim-app.sourceforge.net/
+# Open the program and do Skim > Preferences > Sync and turn on "Check for file changes"
+#
+# This is similar to Preview, except it refreshes documents better. In Preview you have to click on the window to get it to refresh, but this one will just stick on a screen and refresh when you change things.
+#
+# 3) Do the "To make this all work" part: http://jon.smajda.com/2008/03/08/latexmk/
+#
+#
+###
+### More from 3)
+###
+#
+# To make all this work on a Mac, do the following:
+#
+# Download and install latexmk and follow the unix instructions. (i.e. put latexmk.pl in your $PATH somewhere, latexmk.1 in your $MANPATH.)
+# Create a file, ~/.latexmkrc, with the following:
+# $pdf_previewer = “open -a /Applications/Skim.app”; $clean_ext = “paux lox pdfsync out”;
+#   (I found this here.) Obviously, you can substitute any PDF viewer.
+# If you’re always going to use latexmk with pdf files, like me, you can add this to your ~/.bash_profile:
+#   alias latexmk='latexmk.pl -pdf -pvc'
+#
+###
+### To compile the document, after seting up latexmkrc, and aliasing the latexmk command
+###
+# latexmk dissertation.tex 
