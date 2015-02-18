@@ -1,0 +1,55 @@
+\chapter{Particle Reconstruction at CMS}
+\label{reconstruction_overview}
+
+\par Data is reconstructed at CMS using the $Particle Flow^{TM}$ algorithm
+
+\section{Muon Reconstruction}
+\label{muon_reco_overview}
+
+\par Muons rely heavily on the inner tracker and muons chambers for
+efficient identrification and reconstruction
+
+\section{Electron Reconstruction}
+\label{electron_reco_overview}
+
+\par Electrons leave charged tracks in the inner tracker, and create a
+wide shower of particles and thus energy deposits in the ECAL.  High
+energy electrons sometimes traverse the entire distance of the ECAL
+and leave energy in the HCAL, however the ratio of these two energies
+is disproportionate for the ECAL, and thus this ratio is often used to
+discriminate electrons from highly electromagnetic hadronic jets.
+
+\section{Photon Reconstruction}
+\label{photon_reco_overview}
+
+\par Like electrons, but with no tracks, and narrower shower shape.
+
+\section{Jet Reconstruction}
+\label{jet_reco_overview}
+
+\par Jets are formed by matching tracks from the inner tracker to
+energy deposits in the ECAL and HCAL.  Energy clusters are identified
+from the ECAL and HCAL, and everything is then clustered in a cone.
+
+\section{Tau Reconstruction}
+\label{tau_reco_overview}
+
+\par So heavy that they decay to leptons or hadrons before traversing
+the detector, they still leave an oddly-numbered pronged decay hadronically due
+to charge conservation requiring that one of the hadrons produced be
+eqaul charge to the tau.  This results in one charged, and any number
+of neutral pions, or three charged, and any number of neutral pions. 
+
+\section{Missing Transverse Energy Reconstruction}
+
+\par since the detector is hermetic, and the tracker so granular, we
+can ensure that no particles flew out of the detector due to lack of
+coverage.  Only long-lived neutral particles can escape, such as
+neutrinos in the standard model.  Many \acrshort{bsm} theories, such
+as SUSY, are characterized by stable, neutral particles. 
+
+\par MET is the vector sum of all of the tracks associated with a
+particular primary vertex (? or all vertices in event).  Thus if there
+wasa neutral particle that escaped detection, there would be a
+momentum imbalance along the trajectory of that particle.  This is how
+neutrinos are identified.  

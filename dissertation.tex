@@ -1,0 +1,47 @@
+\documentclass[16pt,a4paper,openany,twoside]{book}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[top=1in, bottom=1in, left=1.5in, right=1in]{geometry}
+\usepackage{setspace}
+\usepackage{tocbibind}
+\usepackage{lineno}
+\usepackage{definitions}
+\usepackage[nomain,acronym,toc,nopostdot,nonumberlist]{glossaries}
+\usepackage[pdftex,pdftitle={Dissertation},pdfauthor={John Garland Wood}]{hyperref}
+
+\author{John Garland Wood}
+
+\makeglossaries
+\input{acronyms.tex}
+
+\global\def\@title{The Search for Higgs Boson Production in Association with a Top-Quark Pair in $pp$ Collisions at $\sqrt{s}$ = 8 TeV in the Lepton Plus Jets Final State}
+\title{\@title}
+
+\begin{document}
+%%\setlength{\parindent}{1cm}
+
+\frontmatter
+\input{title.tex}
+\doublespacing
+\input{abstract.tex}
+\input{signatures.tex}
+\tableofcontents
+\listoffigures
+\listoftables
+%\clearpage
+
+\mainmatter
+\linenumbers
+\input{introduction.tex}
+\input{theoretical_background.tex}
+\input{lhc_description.tex}
+\input{cms_description.tex}
+\input{reconstruction.tex}
+
+\bibliographystyle{lucas_unsrt}
+\bibliography{dissertation}
+\printglossary[type=\acronymtype,title=List of Acryonyms,toctitle=List of Acronyms]
+
+\end{document}
