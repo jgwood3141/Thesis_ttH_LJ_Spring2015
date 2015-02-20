@@ -126,17 +126,15 @@ interactions, known as Feynmann diagrams.
 
 \begin{figure}
     \centering
-    \begin{subfigure}[b]{0.3\textwidth}
-        \label{fig:qft_lo_ee_scattering}
+    \begin{subfigure}[h]{0.45\textwidth}
         \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/qft_ex__lo_diagram__coulomb_scattering.pdf}
-        \caption{A LO Feynman diagram }
+        \caption{A LO Feynman diagram }\label{fig:qft_lo_ee_scattering}
       \end{subfigure}
       ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
       % (or a blank line to force the subfigure onto a new line)
-      \begin{subfigure}[b]{0.3\textwidth}
-          \label{fig:qft_nlo_ee_scattering}
+      \begin{subfigure}[h]{0.45\textwidth}
           \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/qft_ex__nlo_diagram__coulomb_scattering.pdf}
-          \caption{A NLO Feynman diagram}
+          \caption{A NLO Feynman diagram}\label{fig:qft_nlo_ee_scattering}
       \end{subfigure}
       \caption{Leading and Next to Leading Order Feynman diagrams
         for the coulomb scattering process} \label{fig:feynman_diagrams_ee_scattering}
@@ -1257,7 +1255,7 @@ $SU(2)\otimes~U(1)$ symmetry.
 \end{aligned}
 \end{equation}
 
-\begin{equation}\label{eq:ewk_lagrangian_unbroken}
+\begin{equation}\label{eq:ewk_lagrangian_broken}
 \begin{aligned}
 \mathcal{L}_{GWS} = &~ -\frac{1}{4}(Z_{\mu\nu}^{0})^{2} -
 \frac{1}{2}(W_{\mu\nu}^{+}W_{\mu\nu}^{-}) -
@@ -1384,54 +1382,59 @@ m_{W} =&~ 80.376 \pm 0.0033\GeV
 \end{aligned}
 \end{equation}  
 
-\begin{figure}[h]
+\begin{figure}
    \centering
-  \includegraphics[width=0.5\textwidth]{Figures/Experimental_Results/Nnu.eps}
-  \caption{Experimental results of the width of $Z$ boson from LEP, comparing the hypotheses of
+   \begin{subfigure}[h]{0.3\textwidth}
+     \includegraphics[width=\textwidth]{Figures/Experimental_Results/Nnu.eps}
+     \caption{Measurement of the width of $Z$ boson from LEP, comparing the hypotheses of
     2, 3, or 4 neutrino generations} \label{fig:lep_Z_3_families}
+   \end{subfigure}
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      % (or a blank line to force the subfigure onto a new line)
+   \begin{subfigure}[h]{0.3\textwidth}
+     \includegraphics[width=\textwidth]{Figures/Experimental_Results/top_mass_tevatron_2012.eps}
+     \caption{Measurement of the top mass from the CDF detector at the Tevatron} \label{fig:topMass_CDF}
+   \end{subfigure}
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      % (or a blank line to force the subfigure onto a new line)
+   \begin{subfigure}[h]{0.3\textwidth}
+     \includegraphics[width=\textwidth]{Figures/Experimental_Results/CMS_higgsMass_scan_1d_all.pdf}
+     \caption{Measurement of the Higgs mass from the CMS detector at the LHC} \label{fig:topMass_CDF}
+   \end{subfigure}
+   \caption{Experimental milestones of the Standard Model}\label{fig:ex_milestones_sm}
 \end{figure}
 
 \noindent the experiment was also able to put stringent limits on the
 existence of more than three families of leptons and quarks by
 measuring the width of the $Z$ boson.  Figure
-\ref{fig:lep_Z_3_families} shows the comparison of two, three, and
-four family hypotheses to data.   
-
-\begin{figure}[h]
-   \centering
-  \includegraphics[width=0.5\textwidth]{Figures/Experimental_Results/top_mass_tevatron_2012.eps}
-  \caption{Recent experimental results of the top mass from the CDF detector at the Tevatron} \label{fig:topMass_CDF}
-\end{figure}
+\ref{fig:ex_milestones_sm}(\subref{fig:lep_Z_3_families}) shows the
+comparison of two, three, and four family hypotheses to data.   
 
 \par Another milestone for the Standard Model occured in 1995 when the
 CDF~\cite{ex:CDF_topQuark} and D0 experiments~\cite{ex:D0_topQuark} at
 the Tevatron announced the observation of the top quark, with
 $m_{t}\sim~176~\GeV$, in $p\bar{p}$ collisions at $\sqrt{s}=1.8~\TeV$.
-Figure \ref{fig:topMass_CDF} shows a plot from 2012, the latest top quark mass measurements
-from CDF, which reports a $m_{t} = 173.18 \pm 0.56 \pm 0.75~\GeV$. It was the  
-last quark predicted by the CKM matrix to be observed, and earned
-Makoto Kobayashi and Toshihide Maskawa the nobel prize in 2008 for
-their work extending the quark sector to three families and
-parameterizing their electroweak mixing.   
-
-\begin{figure}[h]
-   \centering
-  \includegraphics[width=0.5\textwidth]{Figures/Experimental_Results/CMS_higgsMass_scan_1d_all.pdf}
-  \caption{Recent experimental results of the Higgs mass from the CMS detector at the LHC} \label{fig:topMass_CDF}
-\end{figure}
+Figure \ref{fig:ex_milestones_sm}(\subref{fig:topMass_CDF}) shows a
+plot from 2012, the latest top quark mass measurements from CDF, which
+reports a $m_{t} = 173.18 \pm 0.56 \pm 0.75~\GeV$. It was the last
+quark predicted by the CKM matrix to be observed, and earned Makoto
+Kobayashi and Toshihide Maskawa the nobel prize in 2008 for their work
+extending the quark sector to three families and parameterizing their
+electroweak mixing.    
 
 \par Yet another milestone was reached in 2012, when the CMS and ATLAS
 detectors at CERN anounced the observation of a new boson, with
 characteristics strikingly similar to the elusive Higgs boson of the
-SM.  Figure \ref{fig:topMass_CDF} shows the latest measurement results
-on the mass from the $H\rightarrow\gamma\gamma$ and $H\rightarrow~ZZ$
-channels, with a $m_{H} = 125.02 \pm 0.27 \pm 0.15$.  One of the most
-important remaining goals is to measure the couplings of this new
-boson to all of the other particles in the Standard Model.  Of
-particular interest is the coupling to the top-quark, since it offers
-the largest value of the Higgs Yukawa coupling to measure.  This
-offers a test of the nature of the coupling, as well as a probe into
-deviations from its value.  
+SM.  Figure \ref{fig:ex_milestones_sm}(\subref{fig:topMass_CDF}) shows
+the latest measurement results on the mass from the
+$H\rightarrow\gamma\gamma$ and $H\rightarrow~ZZ$ channels, with a
+$m_{H} = 125.02 \pm 0.27 \pm 0.15$.  One of the most important
+remaining goals is to measure the couplings of this new boson to all
+of the other particles in the Standard Model.  Of particular interest
+is the coupling to the top-quark, since it offers the largest value of
+the Higgs Yukawa coupling to measure.  This offers a test of the
+nature of the coupling, as well as a probe into deviations from its
+value.   
 
 
 \section{Higgs Procuction in $pp$ Collisions at the LHC}
@@ -1456,62 +1459,370 @@ of these mechanisms.
 
 \begin{figure}
     \centering
-    \begin{subfigure}[b]{0.3\textwidth}
-        \label{fig:higgs_production_ggf}
+    \begin{subfigure}[h]{0.3\textwidth}
         \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/higgs_production__ggf.pdf}
-        \caption{Gluon-Gluon Fusion}
+        \caption{Gluon-Gluon Fusion}\label{fig:higgs_production_ggf}
       \end{subfigure}
       ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
       % (or a blank line to force the subfigure onto a new line)
-      \begin{subfigure}[b]{0.3\textwidth}
-        \label{fig:higgs_production_ggf}
+      \begin{subfigure}[h]{0.3\textwidth}
         \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/higgs_production__vbf.pdf}
-        \caption{Vector Boson Fusion}
+        \caption{Vector Boson Fusion}\label{fig:higgs_production_vbf}
       \end{subfigure}
       ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
       % (or a blank line to force the subfigure onto a new line)
-      \begin{subfigure}[b]{0.3\textwidth}
-        \label{fig:higgs_production_ggf}
+      \begin{subfigure}[h]{0.3\textwidth}
         \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/higgs_production__vh.pdf}
-        \caption{Associated Production with $W,Z$}
+        \caption{Associated Production with $W,Z$}\label{fig:higgs_production_vh}
       \end{subfigure}
       \caption{Feynman diagrams for the three largest Higgs production
         modes at the LHC} \label{fig:feynman_diagrams__higgs_production}
 \end{figure}
 
-\par Show plot of produciton mechanisms
+\par Gluon-gluon fusion, which proceeds via a heavy quark
+loop~\cite{th:HiggsXS_2013}, is the dominant production mechanism at
+the LHC.  The QCD radiative corrections to the total cross section have been computed
+at the next-to-leading order (NLO) and at the next-to-next-to-leading order (NNLO
+accuracy).  The cross section for Higgs production at $m_{H} =
+125\GeV$ and $\sqrt{s}=8\TeV$, the cross section is given as:
+\begin{equation}\label{eq:ggf_xs}
+\sigma_{ggF} = 19.27~~\pm \text{~~QCD Scale Unc.}^{+7.2\%}_{-7.8\%}~~\pm
+\text{~~PDF+$\alpha_{S}$ Unc.}^{+7.4\%}_{-6.9\%}~~\pbinv
+\end{equation}
+\noindent Figure \ref{fig:feynman_diagrams__higgs_production}(\subref{fig:higgs_production_ggf}) shows a Feynman
+diagram for this process.  The triangle loop contains all strongly
+coupled fermions, which is dominated by the top-quark since the
+Yukawa coupling to the Higgs is the largest.  
 
-\par Gluon-Gluon Fusion and diagram
+\par Vector boson fusion proceeds through the fusion of $W^{+}W^{-}$
+or $Z^{0}Z^{0}$  gauge bosons~\cite{th:HiggsXS_2013}. The
+characteristic signature of the production mode is the associated
+production of two quarks, typically at a low angle relative to the
+proton beam.  This process has been caclulated to NNLO for QCD and NLO
+for Electroweak corrections~\cite{th:HiggsXS_2013}.  The cross section
+at $m_{H} = 125\GeV$ and $\sqrt{s}=8\TeV$ is given as:
+\begin{equation}\label{eq:vbf_xs}
+\sigma_{VBF} = 1.653~~\pm \text{~~EW Unc.}^{+4.5\%}_{-4.5\%}~~\pm
+\text{~~QCD Scale Unc.}^{+0.2\%}_{-0.2\%}~~\pm
+\text{~~PDF+$\alpha_{S}$ Unc.}^{+2.6\%}_{-2.8\%}~~\pbinv 
+\end{equation}
+\noindent Figure
+\ref{fig:feynman_diagrams__higgs_production}(\subref{fig:higgs_production_vbf})
+shows a Feynman diagram for VBF production.  The large coupling to the
+$W,Z$ bosons helps to make this the sub-dominant production mechanism
+at the LHC.  However, the gluon content of the proton at \TeV energies
+is much larger than that of the valence quarks, thus the relative
+suppression.  
 
-\par Vector Boson Fusion and diagram
+\par The third largest production mechanism for Higgs bosons at the
+LHC is through associated production with a $W$ or $Z$
+boson~\cite{th:HiggsXS_2013}.  It has been calculated to NNLO for QCD
+and NLO for Electroweak corrections. This process is also sometimes
+referred to as, Higgstrahlung, since it resemble the bremstrahlung
+process of an electron radiating a photon. The higher order
+electroweak corrections are similar to that of the Drell-Yan, so much
+of the technology to compute the cross-section can be borrowed from
+existing EW calculations.  The cross section for $m_{H} = 125\GeV$ and
+$\sqrt{s}=8\TeV$ is:  
+\begin{equation}\label{eq:vh_xs}
+\begin{aligned}
+\sigma_{WH} =&~ 0.7046~~\pm \text{~~QCD Scale Unc.}^{+1.0\%}_{-1.0\%}~~\pm
+\text{~~PDF+$\alpha_{S}$ Unc.}^{+2.3\%}_{-2.3\%}~~\pbinv \\
+\sigma_{ZH} =&~ 0.4153~~\pm \text{~~QCD Scale Unc.}^{+3.1\%}_{-3.1\%}~~\pm
+\text{~~PDF+$\alpha_{S}$ Unc.}^{+2.5\%}_{-2.5\%}~~\pbinv 
+\end{aligned}
+\end{equation}
+\noindent Figure
+\ref{fig:feynman_diagrams__higgs_production}(\subref{fig:higgs_production_vh})
+shows the Feynman diagram for VH production.  This channel is most
+useful for identifying hadronic decays of the Higgs, since the
+associated gague boson can decay to leptons, giving a strong kinematic
+handle over backgrounds that would normally overwhelm a similar search
+in the ggF channel.  
 
-\par Associated Production and diagram
+
+\section{\ttH Production in $pp$ Collisions at the LHC}
+\label{ttH_production_overview}
+
+\begin{figure}[h]
+   \centering
+  \includegraphics[width=0.3\textwidth]{Figures/Feynman_Diagrams/higgs_production__ttH.pdf}
+  \caption{Feynman diagram for \ttH production} \label{fd:ttH_simple}
+\end{figure}
+
+\par The \ttH production mode is the fourth largest production mode at
+the LHC~\cite{th:HiggsXS_2013}.  This production mode has been
+calculated to NLO in
+QCD~\cite{tthXS_NLO_BeenakkerEtAl_1}~\cite{tthXS_NLO_BeenakkerEtAl_2}
+and has been studied recently with the state of the art NLO tools
+using the aMC@NLO~\cite{tthXS_aMCatNLO_Frederix} and POWHEG
+(PYTHIA+HERWIG)~\cite{tthXS_powheg_Garzelli} frameworks. Studies have
+also been performed interfacing NLO QCD studies
+~\cite{tthXS_NLO_Dawson} with the Sherpa parton shower
+framework~\cite{tthXS_sherpa_Gleisberg}.  Additional studies on the
+effects of spin correlations with the aMC@NLO and Madspin framework
+have also been performed~\cite{tthXS_aMCatNLO_madspin_Artoisenet}.  
+
+\par  It has been found that the additional of NLO effects increases
+the cross-section relative to LO by $\sim20\%$.  The largest
+theoretical uncertainty comes from the variation of the
+renormalization and factorization scale, the QCD coupling $\alpha_{S}$,
+and the PDF uncertainty.  The renomarlization and factorization scales
+are set to $\mu_{R} = \mu_{F} = (1/2)(m_{T} + m_{T} + m_{H})$ and are
+varied by a factor of 2 to determine the cross-section's dependence on
+these parameters.  Three different PDF sets,  MSTW2008, CTEQ6.6, and
+NNPDF2.0 were used with the appropriate corresponding values of
+$\alpha_{S}$ to determine the combined effect of varying
+PDF+$\alpha_{S}$.  The cross section for $m_{H} = 125\GeV$ and
+$\sqrt{s}=8\TeV$ is given by:
+\begin{equation}\label{eq:tth_xs}
+\sigma_{ttH} = 0.1293~~\pm \text{~~QCD Scale Unc.}^{+3.8\%}_{-9.3\%}~~\pm
+\text{~~PDF+$\alpha_{S}$ Unc.}^{+8.1\%}_{-8.1\%}~~\pbinv
+\end{equation}
+
+\noindent A search for the Higgs in this production mode is
+additionally challenging due to this large $\sim10\%$ error on the
+theoretical cross-section.  Figure \ref{fd:ttH_simple} shows a Feynman
+diagram for this process before the branching of the top-quarks or
+Higgs to final states.  
+
+\par When asking for the Higgs to decay to b-quark
+pairs, yet another complication arrises when trying to identify which
+b-quarks came from a top decay or from a Higgs decay.  For example, in
+the semileptonic decay of top quarks, there will be four b-quarks, and
+two light-flavor quarks in the final state.  This means there are 15
+(six choose four) possibilities to associate quarks to the top
+system.  Although this is potentially constrained by b-tagging, and
+kinematic requirements (such as forming the top or $W$ masses), the
+number of remaining possibilites smears out the resolution on peaking
+variables such as the invariant mass of b-quark pairs.  
 
 
-\section{~\ttH~Production and Background Processes in $pp$ Collisions
-  at the LHC}
-\label{ttH_production_and_backgrounds_overview}
+\section{Background Processes to \ttH}
+\label{ttH_backgrounds_overview}
 
-\par For this special case of $pp$ collisions show diagram of
-~\ttH~production.
+\begin{figure}{h}
+    \centering
+    \begin{subfigure}[h]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/higgs_production__tth_semileptonic.pdf}
+        \caption{Semileptonic \ttH, with $H\rightarrow~b\bar{b}$}\label{fig:higgs_production_tth_semileptonic}
+      \end{subfigure}
+      ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      % (or a blank line to force the subfigure onto a new line)
+      \begin{subfigure}[h]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/backgrounds__ttbar_plus_bbar_semileptonic.pdf}
+        \caption{Semileptonic \ttbb}\label{fig:higgs_production_vbf}
+      \end{subfigure}
+      \caption{Feynman diagrams for the semileptonic \ttH process and
+        its irreducible background, \ttbb } \label{fig:feynman_diagrams__tth_vs_ttbb_semilep}
+\end{figure}
 
-\par backgrounds for this are dominated by ~\ttjets~in
-particular~\ttbb.  Show diagrams
+\par The dominant background for \ttH production of top-quark pairs
+with additional ISR/FSR jets, \ttjets.  The irreducable component of
+this background is comes when the extra radiation produces a final
+state with two additional b-quarks, \ttbb.  Figure
+\ref{fig:feynman_diagrams__tth_vs_ttbb_semilep} compares the Feyman
+diagrams for the semileptonic decays of \ttH and \ttbb.  
 
-\par Single Top
+\par Additional difficulties come from the theoretical uncertainty on
+the \ttbb background~\cite{th:HiggsXS_2013}.  The process has been
+calcualted to NLO QCD in Sherpa~\cite{tthXS_sherpa_Gleisberg} and
+OpenLoops~\cite{ttbbXS_openloops_Cascioli}~\cite{ttbbXS_openloops_help1_Krauss}~\cite{ttbbXS_openloops_help2_Gleisberg}.
+It has been found that depending on selection cuts, and use of NLO PDF
+inputs, the difference between LO and NLO calculations on the cross
+section can be anywhere from $0.99\%$ to $1.96\%$.  
 
-\par Diboson
+\par The light flavor component of the \ttjets background also enters
+in the selection when any of the jets from the $t\bar{t}$ system or
+extra radiation are misidentified as $b$-jets.  The cross-section for
+the \ttjets process is $\sim245\pbinv$.  This is a factor of 1800, so
+even if a b-tagging algorithm performs with a $1\%$ mis-identification
+rate of light-jets, there will still be a large contribution from this
+process that will leave a very similar signature in the detector as
+\ttH. 
 
-\par W/Z jets
+\begin{figure}{h}
+    \centering
+    \begin{subfigure}[h]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/backgrounds__ttbar_plus_W.pdf}
+        \caption{The \ttW background}\label{fd:ttW}
+      \end{subfigure}
+      ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      % (or a blank line to force the subfigure onto a new line)
+      \begin{subfigure}[h]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/backgrounds__ttbar_plus_Z.pdf}
+        \caption{The \ttZ background}\label{fd:ttZ}
+      \end{subfigure}
+      \caption{Feynman diagrams for the \ttW and \ttZ background processes} \label{fig:feynman_diagrams__ttW_ttZ}
+\end{figure}
 
+\par The next largest background is the production of vector bosons in
+association with top-quark pairs, \ttW and \ttZ.  Figure
+\ref{fig:feynman_diagrams__ttW_ttZ} shows Feynman diagrams from these
+two processes.  They have cross-sections of $\sigma_{ttW}=0.249\pbinv$
+and $\sigma_{ttZ}=0.208\pbinv$, which are only a factor of $\sim$2
+greater than the \ttH process.  These processes can enter the
+semileptonic \ttH selection by a semileptonic \ttbar decay, while the
+vector bosons decay to quarks, or through a hadronic \ttbar decay,
+while the vector bosons decay to quarks, and in the case of \ttZ, of
+the leptons is not identified in the reconstruction.  
+
+\begin{figure}{h}
+    \centering
+    \begin{subfigure}[h]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/backgrounds_singleT_sChan.pdf}
+        \caption{Single $t$, s-channel}\label{fd:t_sChan}
+      \end{subfigure}
+      ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      % (or a blank line to force the subfigure onto a new line)
+      \begin{subfigure}[h]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/backgrounds_singleT_tChan.pdf}
+        \caption{Single $t$, t-channel}\label{fd:t_tChan}
+      \end{subfigure}
+      ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      % (or a blank line to force the subfigure onto a new line)
+      \begin{subfigure}[h]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/backgrounds_singleT_tWChan.pdf}
+        \caption{Single $t$, tW-channel}\label{fd:t_tWChan}
+      \end{subfigure}
+      \caption{Feynman diagrams for the single $t$ s,t, and t$W$ background processes} \label{fig:feynman_diagrams__singleT_t_s_tW_channels}
+\end{figure}
+
+
+\par Single top production is also an important background to consider
+in a search for \ttH production.  Figure
+\ref{fig:feynman_diagrams__singleT_t_s_tW_channels} shows Feynman
+diagrams for this process.  It does not have as large of a
+contribution as the other backgrounds, since it requires addional
+radiation in order to have a similar final state jet multiplicity as
+\ttH.  However, since a top-quark is still involved in the process,
+the final state kinematics of its decay products will be very similar.
+ Single $t$ production has a cross section of $\sigma_{t}=71.3\pbinv$,
+ while Single $\bar{t}$ production has a cross section of
+ $\sigma_{\bar{t}}=43.6\pbinv$, due to charge asymmetry of the valence
+ quarks of the proton
+
+\begin{figure}{h}
+    \centering
+    \begin{subfigure}[h]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/backgrounds__VplusJets.pdf}
+        \caption{$W,Z$ plus jets}\label{fd:t_tChan}
+      \end{subfigure}
+      ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      % (or a blank line to force the subfigure onto a new line)
+      \begin{subfigure}[h]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/Feynman_Diagrams/backgrounds__VV.pdf}
+        \caption{DiBoson Production}\label{fd:VV}
+      \end{subfigure}
+      \caption{Feynman diagrams for the $W,Z$ plus jets, and diBoson
+        ($WW$, $WZ$, $ZZ$) production.} \label{fig:feynman_diagrams__Vjets__VV}
+\end{figure}
+
+\par The last backgorunds to consider are the electroweak production
+of $W$ and $Z$ bosons in association with jets, as well as $WW$, $WZ$, and
+$ZZ$ pairs in association with jets.  Figure
+\ref{fig:feynman_diagrams__Vjets_VV} shows the Feynman diagrams for
+these processes, where the $V$, stands in for wither $W$ or $Z$
+bosons.  For a semileptonic selection of \ttH events, $Z$ plus jets
+events enter from a mis-identification of one of the leptons from the
+$Z$ boson decay.  Extra FSR/ISR radiation is also to leave a similar
+signature in the signal region of a \ttH search, so it mainly
+contributes to control regions of the data.  
 
 \section{Potential BSM Effects on~\ttH~production}
 \label{bsm_effects_overview}
 
-\par Fourth generation
+\par The phenomological motivation for the existence of physics beyond
+the Standard Model come from the observation of phenomenon or states
+of matter not described by the theory.  Observations of the cosmic miscrowave background
+from the Plank telescope have estimated that only $\sim5\%$ of the
+observable universe is composed of ordinary
+matter~\cite{BSM_Planck}. The remaining composition is divided between  
+Dark Matter ($\sim27\%$, and $\sim68\%$ respecitvely).  Evidence for
+Dark Matter also comes from discrepencies between the observed
+rotational velocities of galaxies, and the observed mass
+distributions, suggesting the presence of additional form of matter
+which does not interact
+electromagnetically~\cite{BSM_Rubin_DM_GalaxyRotations}.
 
-\par Vector-like top quark
+\par Additionally, in 1998, the Super-Kamiokande experiment proved that
+neutrinos oscillated between flavors, implying indirectly that they
+also have mass~\cite{BSM_superK}.  This is something not described in
+the Standard Model of physics.  Due to their neutral charge, these
+particles  are extremely difficult to detect, so experiments have only
+been able to measure differences in the mass squared between the three
+mass eigenstates.  In 2005, the KamLAND experiment reported
+$|{\Delta}m^{2}_{12}=0.000079
+eV^{2}|$~\cite{BSM_neutrinoDeltaM12_kamland}.  In 2006, the MINOS
+experiment reported
+$|{\Delta}m_{23}=0.0027 eV^{2}|$~\cite{BSM_neutrinoDeltaM23_minos}.
 
-\par SUSY
+\par One of the largest theoretical problems with the Standard Model,
+comes the mechanism which made it all possible- the Higgs.  In
+equation \ref{eq:ewk_lagrangian_unbroken} there are terms that couple
+the Higgs boson to itself, $-{\lambda}vh^{3}$, and
+$-\frac{1}{4}{\lambda}h^{4}$.  When computing NLO effects, these terms
+lead to a divergence in the Higgs mass, when considering the effect of
+a loop of fermions on the Higgs propagator.  The correctios are of the form ${\Delta}m_{H} =
+-\frac{\lambda_{f}^{2}}{8\pi^{2}}\Lambda_{UV}$.  Where $\Lambda_{UV}$
+is the high energy cut off for the theory, which in the limit of a
+perfect theory, should extend to infinity.  This is known as the
+hierarchy problem.  
+
+\par Beyond the Standard Model physics is a term that describes
+extensions of the Standard Model in order to describe the observed
+phenomenon.  For the neutrino oscilations, a solution similar to CKM
+matrix has been proposed, the Pontecorvo–Maki–Nakagawa–Sakata (PMNS)
+matrix.  This proposes that the mass eigenstates of the neutrino are
+linear combinations of the weak eigenstates, allowing for the mixing
+of flavors.  Current experiments now seek to measure the free
+parameters of this matrix.  
+
+\begin{figure}[h]
+   \centering
+  \includegraphics[width=0.5\textwidth]{Figures/Basic_Diagrams/hierarchy_problem_susy_solution.png}
+  \caption{The cancellation of the divergent Higgs mass from a loop of
+  top-quarks is cancelled by a loop of supersymmetric top-quarks,
+  stop-quarks,} \label{fig:hierarchy_problem}
+\end{figure}
+
+\par Both the dark matter and hierarchy problems suffer in the fact
+that there is no clear model, such as the PMNS matrix, to provide a
+theoretical solution.  Out of the plethora of theories that attempt to
+solve these problems, supersymmetry (SUSY) is the most popular in the
+theoretical and experimental community.  It suggests that there is a
+broken symmetry between fermions and bosons, and introduces a partner
+to each Standard Model particle with a spin quantum number less
+1/2~\cite{Martin_SUSY_primer}.  For the hierarch problem, this
+provides a set of particles to cancel out the divergences in the NLO
+corrections to the Higgs mass.  Figure \ref{fig:hierarchy_problem}
+shows the Feynmann diagrams for a supersymmetric top-quark, or stop
+quark, that would cancel the divergent contribution from the Standard
+Model top quark.  Depending on the specific form of the SUSY model,
+the stop quarks can potentially couple directly or indirectly to the
+top-quark, producing them at a higer rate during $pp$ collisions.
+This would effect the number of observed events making it into the
+\ttH~selection.  
+
+\par A number of extensions to the SM also involve introducing new
+top-like particles into the theory.  Vector-like quarks would be spin
+1/2 particles that transform as triplets under the $SU(3)$ color group
+and whose left and right-handed components have the same  
+color and electroweak quantum
+numbers~\cite{VectorLikeQuarks_Aguilar-Saavedra}.  These objects are
+common to several different types of models.  Little Higgs
+models~\cite{BSM_littleHiggs_Burdman}~\cite{BSM_littleHiggs_Perelstein}~\cite{BSM_littleHiggs_PhysRevD.74.055001}, 
+models with extra
+dimensions~\cite{BSM_extraD_Cheng:1999bg}~\cite{BSM_extraD_Carena:2006bn},
+top-color models~\cite{BSM_topColor_Hill:1991at}, and composite Higgs
+models~\cite{BSM_composite_Higgs_Contino:2006qr}, include a
+vector-like top partner,$ t^{\prime}$ that decays to a top-quark and
+either a Higgs, $W$, or $Z$ particle.  Both $t^{\prime}t^{\prime}$
+pair production and $t^{\prime}t$ production would yield the ttH final
+state, or at least one indistinguishable detector signature.  \ttH
+search can provide indirect limits on these models, by observing an
+excess or lack thereof of \ttH events, without having to directly
+construct a $t^{\prime}$ resonance.  
+
 
       
