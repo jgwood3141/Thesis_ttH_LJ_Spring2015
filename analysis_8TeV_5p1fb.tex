@@ -1,4 +1,4 @@
-\chapter{Analysis I: The first 5 \fbinv of 8 \TeV data}
+\chapter{Analysis I: The first 5.08 \fbinv of 8 \TeV data}
 \label{analysis_1_overview}
 
 \par The search for $t\bar{t}H$ production begins by identifying $pp$
@@ -496,7 +496,7 @@ event is required to pass the following filters:
 \noindent which are described in ~\cite{METfilters}.
 
 \par Additionally, beam scraping events are filtered based on the fraction
-of good tracks.  We require that at least 25\% of tracks are of high
+of good tracks.  At least 25\% of tracks are required to be of high
 purity.  Finally, every data event must contain at least one primary
 vertex (PV) that passes the following selection:
 
@@ -978,7 +978,7 @@ respectively.
  \end{center}
 \end{figure}
 
-\begin{sidewaystable}[h]
+\begin{sidewaystable}[hbtp!]
 \begin{adjustwidth}{-1.7in}{-1.7in}
   \centering
   \noindent
@@ -1024,6 +1024,36 @@ Diboson & 0.7 $\pm$ 0.3 & 1.0 $\pm$ 0.3 & 0.2 $\pm$ 0.1 & 0.1 $\pm$ 0.0 & 0.0 $\
 Total bkg & 1850 $\pm$ 490 & 700 $\pm$ 150 & 460 $\pm$ 110 & 336 $\pm$ 93 & 10.1 $\pm$ 3.2 & 20.2 $\pm$ 6.6 & 31 $\pm$ 11 \\
  \hline
 Data & 1723 & 785 & 531 & 324 & 13 & 24 & 37 \\
+\hline
+\end{tabular}
+  \end{adjustwidth}
+\end{sidewaystable}
+
+
+
+\begin{sidewaystable}[hbtp!]
+\begin{adjustwidth}{-1.7in}{-1.7in}
+  \centering
+  \noindent
+  \small
+    \caption{Expected event yields in 5 fb$^{-1}$ for signal and backgrounds in the $\mu$+jets channel.}
+    \label{tab:dataMC_LJeventyield_mu}
+    \begin{tabular}{|l|c|c|c|c|c|c|c|} \hline
+& $\geq$6 jets & 4 jets & 5 jets & $\geq$6 jets & 4 jets & 5 jets & $\geq$6 jets \\
+& 2 tags & 3 tags & 3 tags & 3 tags & $\geq$4 tags & $\geq$4 tags & $\geq$4 tags \\ \hline \hline
+$t\bar{t}H(125)$ & 11.7 $\pm$ 1.9 & 3.9 $\pm$ 1.9 & 6.1 $\pm$ 3.1 & 6.9 $\pm$ 3.5 & 0.6 $\pm$ 0.3 & 1.5 $\pm$ 0.8 & 2.5 $\pm$ 1.3 \\
+ \hline
+$t\bar{t}+$lf & 3460 $\pm$ 940 & 1320 $\pm$ 280 & 870 $\pm$ 210 & 570 $\pm$ 170 & 18.0 $\pm$ 5.1 & 27.6 $\pm$ 8.6 & 41 $\pm$ 15 \\
+$t\bar{t}+b\bar{b}$ & 61 $\pm$ 34 & 35 $\pm$ 19 & 43 $\pm$ 24 & 35 $\pm$ 20 & 2.5 $\pm$ 1.7 & 8.4 $\pm$ 5.4 & 15.4 $\pm$ 9.4 \\
+$t\bar{t}+c\bar{c}$ & 62 $\pm$ 17 & 19.6 $\pm$ 5.2 & 25.0 $\pm$ 6.9 & 25.9 $\pm$ 7.7 & 0.6 $\pm$ 0.4 & 0.8 $\pm$ 0.9 & 3.7 $\pm$ 1.8 \\
+$t\bar{t}V$ & 35.7 $\pm$ 7.5 & 4.5 $\pm$ 1.1 & 6.1 $\pm$ 1.4 & 8.6 $\pm$ 2.1 & 0.1 $\pm$ 0.1 & 0.7 $\pm$ 0.2 & 1.5 $\pm$ 0.4 \\
+Single $t$ & 79 $\pm$ 18 & 56 $\pm$ 11 & 25.6 $\pm$ 6.3 & 10.3 $\pm$ 2.9 & 0.3 $\pm$ 0.6 & 3.1 $\pm$ 2.2 & 1.0 $\pm$ 0.6 \\
+$V+$jets & 53 $\pm$ 40 & 5.9 $\pm$ 5.9 & 0.8 $\pm$ 0.9 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 \\
+Diboson & 1.2 $\pm$ 0.4 & 1.8 $\pm$ 0.6 & 0.5 $\pm$ 0.2 & 0.2 $\pm$ 0.1 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 \\
+ \hline
+Total bkg & 3760 $\pm$ 980 & 1440 $\pm$ 300 & 970 $\pm$ 230 & 650 $\pm$ 190 & 21.5 $\pm$ 6.1 & 41 $\pm$ 12 & 63 $\pm$ 21 \\
+ \hline
+Data & 3503 & 1646 & 1116 & 686 & 28 & 56 & 74 \\
 \hline
 \end{tabular}
   \end{adjustwidth}
@@ -1213,7 +1243,8 @@ The separation of the individual variables is evaluated using a
 separation benchmark $\langle S^2 \rangle$~\cite{Hocker:2007ht}
 defined as follows: 
 
-\begin{equation} \langle S^2 \rangle = \frac{1}{2}
+\begin{equation}\label{eq:separation}
+\langle S^2 \rangle = \frac{1}{2}
  \int{\frac{\left(\hat{y}_S(y) - \hat{y}_B(y)\right)^2}{\hat{y}_S(y) +
  \hat{y}_B(y)} dy}, 
 \end{equation} 
@@ -1236,7 +1267,7 @@ variables degraded discrimination power significantly.
   \centering
   \noindent
   \small
-    \caption{The ANN inputs for the nine jet-tag categories in the $8 \TeV$ \ttH analysis in the lepton+jets and dilepton channels. The choice of inputs
+  \caption{The ANN inputs for the nine jet-tag categories in the $8 \TeV$ \ttH analysis in the lepton+jets and dilepton channels. The choice of inputs
 is optimized for each category. Definitions of the variables are given
 in the text. The best input variable for each jet-tag category is denoted by 
 $\bigstar$.}
@@ -2145,10 +2176,11 @@ $\mathcal{L}(\mathrm{data}|\mu,\theta)$ is defined as
 reported in the upper limit results as the ratio of the cross-section
 upper limit over the standard model cross-section and $\theta$
 represents a full set of nuisance parameters that are used to
-incorporate systematic uncertainties. The Probability Distribution
-Function ($pdf$) of the nuisance parameter $p(\tilde{\theta}|\theta)$,
-where $\tilde{\theta}$ is the default value, reflects the degree of
-confidence in what the true value of $\theta$ is. 
+incorporate systematic uncertainties \cite{CMS-NOTE-2011-005}.  
+The Probability Distribution Function ($pdf$) of the nuisance parameter
+$p(\tilde{\theta}|\theta)$, where $\tilde{\theta}$ is the default
+value, reflects the degree of confidence in what the true value of
+$\theta$ is.  
 
 \par To compare the compatibility of the data with the
 $background-only$ and $signal+background$ hypotheses, where the signal
@@ -2172,8 +2204,8 @@ package.  There are two versions of the limit calculation technique
 that we use.  The frequentist CL$_s$ approach uses a large number of
 pseudo-experiments to extract the limit results.  The "asymptoptic''
 approach makes an analytic approximation of the full CL$_s$ technique
-and therefore avoids throwing pseudo-experiments.  The
-asymptotic approach is used for optimizing the analysis, for the
+and therefore avoids throwing pseudo-experiments \cite{Cowan:2010js}.
+The asymptotic approach is used for optimizing the analysis, for the
 results of this anlaysis.  However, for the limits set from the
 combined Lepton+Jets and di-Lepton channels, using both 7 and 8 TeV
 data, the results are calculated using the full CL$_s$ treatment.
@@ -2264,7 +2296,7 @@ Higgs Mass & Observed & Median & 68\% C.L. Range &  95\% C.L. Range  \\ \hline
 
 \begin{figure}[hbtp] 
   {\centering
-    \includegraphics[width=1.0\textwidth]{Figures/Analysis_1_Diagrams/limits_lj_ttH_mH_limit_ExpAndObs_shape.pdf}
+    \includegraphics[width=1.0\textwidth]{Figures/Analysis_1_Diagrams/limits_lj_ttH_mH_limit_ExpAndObs_shape_cropPrelim.pdf}
     \caption{The expected and observed 95\% CL upper limits on the signal strength parameter $\mu = \sigma / \sigma_{SM}$ for the lepton+jets channel using the 2012 dataset.  These limits were extracted using the asymptotic method.}
     \label{fig:lvjj_limit}}
 \end{figure}
@@ -2276,7 +2308,17 @@ observed sign of Higgs production in association with top quarks,
 upper limits are set on the production cross-section,  using the
 statistical methods  described above.  If this data set was repeatedly
 collected, allowing for statistical fluctuations, it should be
-expected that 95$\%$ of the results would fail to observe the signal
-unless its cross-section was modified by a factor of 9.5.  From
+expected that, for a Standard Model Higgs boson, with mass, $m_{H} =
+125 \GeV$, that 95$\%$ of the results would fail to observe the \ttH
+signal unless its cross-section was modified by a factor of 9.5.  From
 simulations alone, this exepected factor is 5.4, an difference of less
-than 2 $\sigma$ from the observed data.   
+than 2 $\sigma$ from the observed data.    
+
+\par The results of this analysis were combined with previous results
+in this channel from 7 TeV data and with a di-lepton final state
+channel and published in the Journal of High Energy Physics (JHEP) in
+May of 2013 \cite{Chatrchyan:2013yea}.  The combined analytical power
+of all of the channels allowed for an upper limit of 5.8 times
+the predicted Standard Model cross section.  This is less than
+1$\sigma$ away from the expected factor of 5.2 from simulations
+alone.  
