@@ -1,9 +1,100 @@
-\chapter{Chapter Title}
-\label{chapter_label}
+\chapter{Conclusions and Summary}
+\label{summary_overview}
 
-TEXT GOES HERE
+\par In 2012, the Large Hadron Collider (LHC) produced the highest
+energy proton-proton collisions, with center of mass energies of 8
+\TeV.  Protons, with humble beginnings in a bottle of Hydrogen, travel
+through a multi-stage accelerator complex, before being injected into
+the 27.6 km LHC ring as two counter-rotating beams.  Superconducting
+radio-frequency cavities accelerate the beams during each revolution,
+constrained to the circular path by more than a thousand 8 T
+superconducting dipole magnets, as each beam is brought to an energy
+of 4 \TeV.  
 
-\section{Section Example}
-\label{section_example}
+\par At one of the four points on the LHC ring where the proton beams
+are squeezed together to produce collisions, sits the Compact Muon
+Solenoid (CMS) experiement, a general purpose particle detector
+designed to elucidate the mechanism of electroweak symmetry breaking,
+and explore physics interactions at the \TeV energy scale.  This
+14,000 ton, 15 m tall devicem, provides hermetic, 4$\pi$, coverage of
+the interaction region, and is composed of a system of sub-detectors,
+with a cylindrical symmetry about the beam-line and interaction
+region, which work in parallel to identify and measure the kinematic
+properties of particles produced during $pp$ collisions.  The inner
+tracking system is composed of more than 70 million silicon pixel and
+strip detectors that provide $\mu$m spatial resolution on the
+trajectory of charged particles.  An electromagnetic calorimeter
+(ECAL) surrounds the inner tracker, and is composed of more than
+75,000 lead-tungstate crystals, which absorb energy from
+electromagnetically interacting particles, with electrons and photons
+depositing almost all of their energy in this sub-detector.  The
+hadronic calorimeter (HCAL) surrounds the ECAL, abosorbing the enregy
+of charged and neutral hadrons with stacks of brass absorber material
+with layers of plastic scintiallator to sample the energy in between.
+The outermost system are the muon chambers, which utilize three
+different types of detector technologies to provide fast timing to
+trigger measurments and excellent spatial resolution on muons, an
+important signature for many \TeV energy scale processes.  Hadrware
+and firmware installed on the detector provide an instant, but basic
+reconstruction of a collision, allowing for the amount of collisions
+recorded to be reduced from a rate of 40 MHz down to 10 kHz.  Events
+are additionally filtered through the use of software to a manageable
+rate of 100 Hz.  
 
-This is a reference to Section ~\ref{section_example}.
+\par Once the first 5.1 \fbinv of 8 \TeV data was collected by the CMS
+detector, a search for the Standard Model Higgs boson, produced in
+association with top-quark pairs (\ttH) was performed in the final
+state with a single lepton, at least 4 jets and at least 2 $b$-tags.
+The search region was divided into categories based on the jet and
+$b$-tag multiplicity of the final state, and a Clermond-Ferrand
+Multi-Layer Perceptron Artificial Neural Network (CFMlpANN) was
+trained to provide a one-dimensional discriminant for how likely the
+event is to be from the \ttH signal, or one of the \ttjets
+backgrounds.  No significant excess of events in the data was
+observed, and an observed (expected) upper limit on the production
+rate of \ttH at 9.5 (5.4) times the rate predicted by the Standard
+Model.  This final state was combined with a di-lepton final state,
+and the previous results from the 7 \TeV dataset collected in 2011, to
+produced an observed (expected) upper limit on the \ttH process as 5.8
+(5.2) times the Standard Model rate and published in the Journal of
+High Energy Physics (JHEP) in May of 2013.  
+
+\par A second analyis was performed on the full 19.5 \fbinv dataset of
+8 \TeV data collected by CMS.  This also used a final state with a
+single lepton, at least 4 jets, and at least 2 $b$-tags, and a search
+region divided into cateogries based on the jet and $b$-tag
+multiplicity of the final state.  A different mulitvariate analysis
+(MVA) technique was employed: a Boosted Decision Tree (BDT) was
+trained to separate the \ttH signal from the \ttjets background for
+each of the jet/tag cateogrizations.  Once again, no significant
+excess of events is observed, and an observed (expected) upper limit
+on the \ttH production rate is set at 4.9 (4.7) times the Standard
+Model prediction.  This analysis was combined with same and opposite
+sign di-lepton, mutli-lepton, and hadronic tau final states to produce
+an observed (expected) upper limit of 4.5 (2.5) time the prediced rate
+of \ttH production.  
+
+\par In preparation to perform this search in the next dataset
+collected by CMS, several investigations have been performed on ways
+to improve the sensitivity of the analysis to the \ttH signal.  One of
+the most important improvements will be the incorporation of
+next-to-leading order (NLO) QCD effects into the simulation of \ttH
+signal and \ttjets background.  This will imporve the modeling of high
+jet-multipicity events, which characterize both the singal and
+background in this analysis.  These improved simulations will also
+incorporate the latest techniques to calculate the spin-correlations
+of the decay products from heavy resonances in top-quark and $W$ boson
+decays, via the MadSpin framework.  This will allow the anglular
+correlations of the daughters of the \ttbar system to be used to
+correctly associate jets in an event to their roles in the \ttbar
+decay, thereby reducing the combinatorics of jets that can possibly be
+associated with jets from the Higgs decay.  
+
+\par With the experience gained in previous analyses, and improvements
+already underway, the observation of a \ttH signal will be
+increasingly likely in the larger statistics, higher-energy datasets
+collected in the future by \ttH.  In the lack of an observation, now
+or in the future, these upper limits can be used to constain future
+models involving physics beyond the Standard Model (BSM) that would
+predict enhancements to final states explored in these first two \ttH
+analyses.  
