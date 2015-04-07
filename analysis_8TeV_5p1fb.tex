@@ -2180,10 +2180,27 @@ incorporate systematic uncertainties \cite{CMS-NOTE-2011-005}.
 The Probability Distribution Function ($pdf$) of the nuisance parameter
 $p(\tilde{\theta}|\theta)$, where $\tilde{\theta}$ is the default
 value, reflects the degree of confidence in what the true value of
-$\theta$ is.  
+$\theta$ is.  For rate uncertainties, this is parameterized by a
+log-normal distribution given by:
+
+\begin{equation}
+\rho(\theta) = \frac{1}{\sqrt{2\pi}\ln{\kappa}}\exp\left( -
+  \frac{(ln(\theta/\tilde{\theta}))^{2}}{2ln(\kappa)^{2}} \right)\frac{1}{\theta}
+\end{equation}
+
+\noindent where $\kappa$ is the parameter used to determine the width
+of the uncertainty, and $\tilde{\theta}$ is the nominal value of the
+distribution.  Shape uncertainties can be taken into account by
+"vertical morphing'' \cite{Conway:2011in}.  For each shape
+uncertainty, two additional histograms of the CFMlpANN output are needed, with
+$\pm1\sigma$ variations of the systematic uncertainty in question
+When building the likelihood, the systematic is associated to a
+nuisance parameter taken from a unit gaussian distribution, which is 
+used to parameterize a quadratic interpolation for shifts below the
+1$\sigma$ value of a given bin, and linearl interpolation for values beyond. 
 
 \par To compare the compatibility of the data with the
-$background-only$ and $signal+background$ hypotheses, where the signal
+$background-only$ ($\mu=0$) and $signal+background$ hypotheses, where the signal
 is allowed to be scaled by some factor $\mu$, the test statistic
 $\tilde{q}_{\mu}$ is constructed based on the profile likelihood
 ratio: 
@@ -2197,20 +2214,58 @@ likelihood estimator of $\theta$, given the signal strength parameter
 $\mu$ and data. The pair of parameter estimators $\hat{\mu}$ and
 $\hat{\theta}$ correspond to the global maximum of the likelihood.
 
-\par To perform the computation of the limits, RooStats-based
-statistical analysis tools recommended by Higgs PAG have been
-used. The corresponding software is the  "Higgs Combination''
-package.  There are two versions of the limit calculation technique
-that we use.  The frequentist CL$_s$ approach uses a large number of
+\par To perform the full CL$_{S}$ technique, $pdf's$ of the results of
+the $background-only$, $f(\tilde{q}_{\mu}|\mu,
+\hat{\theta}_{\mu}^{obs})$, and $signal+background$,
+$f(\tilde{q}_{\mu}|0, \hat{\theta}_{\mu}^{obs})$ test statistics are
+formed by creating $psuedo-datasets$ of the signal and background
+CFMlpANN distributions, with the values of $\hat{\theta}_{0}^{obs}$
+and $\hat{\theta}_{\mu}^{obs}$ fixed, but allowing the shapes and
+normalizations of the CFMlpANN distributions to vary within the
+constriants of the nuisance parameter shapes.  Once the $pdfs$ for
+each of the test statistics are constructed, the $p$-value associated
+with each hypothesis, $p_{\mu}$ and $p_{0}$, are evaluated by the
+following integrals:
+
+\begin{equation}
+p_{\mu} = P( \tilde{q}_{\mu} \ge \tilde{q}_{\mu}^{obs} | signal +
+background ) = \int_{\tilde{q}_{\mu}^{obs}}^{\inf} f(\tilde{q}_{\mu}|\mu,
+\hat{\theta}_{\mu}^{obs}) d\tilde{q}_{\mu} 
+\end{equation}
+
+\noindent for the $signal+background$ hypothesis, and 
+
+\begin{equation}
+1 - p_{0} = P( \tilde{q}_{\mu} \ge \tilde{q}_{\mu}^{obs} |
+background-only ) = \int_{\tilde{q}_{0}^{obs}}^{\inf}
+f(\tilde{q}_{\mu}|0,\hat{\theta}_{0}^{obs}) d\tilde{q}_{\mu} 
+\end{equation}
+
+\noindent for the $background-only$ hypothsis.  CL$_{s}(\mu)$ is
+calculated as a ratio of these $p$-values:
+
+\begin{equation}
+CL_{s}(\mu) = \frac{p_{\mu}}{1-p_{0}}
+\end{equation}
+
+\noindent To quote the 95\% upper limit on $\mu$, $\mu^{95\%CL}$, the
+value of $\mu$ is adjusted until CL$_{s}$ = 0.05. 
+
+\par The frequentist CL$_s$ approach uses a large number of
 pseudo-experiments to extract the limit results.  The "asymptoptic''
 approach makes an analytic approximation of the full CL$_s$ technique
 and therefore avoids throwing pseudo-experiments \cite{Cowan:2010js}.
-The asymptotic approach is used for optimizing the analysis, for the
-results of this anlaysis.  However, for the limits set from the
-combined Lepton+Jets and di-Lepton channels, using both 7 and 8 TeV
-data, the results are calculated using the full CL$_s$ treatment.
-Comparisons have shown that limits obtained with the two techniques
-agree at the 10\% level.  
+The $pdfs$, $f(\tilde{q}_{\mu}|\mu,
+\hat{\theta}_{\mu}^{obs})$, and $f(\tilde{q}_{\mu}|0,
+\hat{\theta}_{\mu}^{obs})$ are approximated as a falling exponential
+below $q_{\mu,A}$, and a guassian above, where $q_{\mu,A}$ is the test
+statistic of the Asimov dataset, the background only hypothesis with
+nominal nuisance value parameters.  The asymptotic approach is used
+for optimization and the results of this anlaysis.  For the limits set
+from the combined Lepton+Jets and di-Lepton channels, using both 7 and
+8 TeV data, the results are calculated using the full CL$_s$
+treatment. Comparisons have shown that limits obtained with the two
+techniques agree at the 10\% level.  
 
 \par In the limit calculation, the backgrounds are decomposed into the
 following distinct categories: $t\bar{t}+$jets, $t\bar{t}+b\bar{b}$,
