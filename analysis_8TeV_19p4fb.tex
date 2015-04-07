@@ -5,11 +5,11 @@
 \TeV run during 2012.  The previous analysis was updated with the full
 dataset.  A similar lepton and jet selection is used, with the same
 classification scheme for events, based on the reconstructed jet and
-$b$-tag multipilicity.  New signal and background simulations were
+$b$-tag multiplicity.  New signal and background simulations were
 generated to account for the increased dataset, requiring new
 calibration factors for the pileup, lepton and jet reconstruction, and
 $b$-tagging efficiency.  Additionally, a new type of multivariate
-analysis (MVA) technique was emplyed, in place of the Clermond-Ferrand
+analysis (MVA) technique was employed, in place of the Clermond-Ferrand
 Multi-Layer Perceptron Artificial Neural Network (CFMlpANN), a Boosted
 Decision Tree (BDT) is used for signal extraction and limit setting.
 The number of input variables that were investigated for use in each
@@ -145,12 +145,12 @@ Table~\ref{tab:bkgSamples} lists the background MC samples and
 associated cross sections.  
 
 \par  For this analysis, the \ttjets background, is decomposed into
-four compents.  The \ttbb, background is separated into two classes:
+four components.  The \ttbb, background is separated into two classes:
 \ttbb events in which both b-quarks are well separated and energetic
 enough to be reconstructed, and events in which either the two
 b-quarks are so close together they merge into the same jet or one of
 the b-quarks is too soft or forward to be reconstructed as a jet.  The
-latter contribution is reffered to as $\ttbar+b$. 
+latter contribution is referred to as $\ttbar+b$. 
 
 \begin{table}[hbtp]\footnotesize
 \centering
@@ -215,7 +215,7 @@ window.  These "pileup events'' affect many aspects of the
 reconstruction, including lepton isolation and jet energy resolution,
 thus the simulated samples must accurately reproduce these effects.
 
-\par As with the last anlysis, for the simulation, it is known how many
+\par As with the last analysis, for the simulation, it is known how many
 additional interactions were added to every generated event.  For the
 data, the number of pileup interactions for each unit of time depends
 on the instantaneous luminosity for each bunch pair and the total
@@ -248,7 +248,7 @@ expected.
 produced from top quark decays have softer $\pt$ distribution than are
 predicted by the Monte Carlo.  Investigations have show that the \PT
 spectra of leptons and jets is softer than data and have traced this
-mismodeling to the top quark $\pt$ distribution
+expected to the top quark $\pt$ distribution
 \cite{CMS-PAS-TOP-12-028, CMS-PAS-TOP-12-027}.  Measurements of the
 differential cross section for top pair production as a function of
 the top quark $\pt$, have allowed for the creation of correction
@@ -259,7 +259,7 @@ reweighting factor based on the $H_{T}$ distribution, binned by number
 of reconstructed vertices.  
 
 \par The scale factor used to correct the Madgraph top quark $\pt$
-distributions atre shown in figure \ref{fig:topptsys}.  The associated
+distributions are shown in figure \ref{fig:topptsys}.  The associated
 uncertainty is a band shown in green, and corresponds to no correction
 factor for the down variation, and a doubling of the correction factor
 for the up variation.  The scale factors are taken from a polynomial
@@ -309,7 +309,7 @@ removed after the correction.
 
 \par This section defines the common physics objects and event
 selection requirements.  Events are required to pass quality filters,
-ensuring optimal operation of electonics and reconstruction, as
+ensuring optimal operation of electronics and reconstruction, as
 described in section \ref{event_cleaning_overview}.  The same lepton
 selection is used that was employed in the previous analysis, with
 events being selected by triggers described in section
@@ -332,24 +332,24 @@ for the CSV algorithm.
 
 \par As described in section \ref{btag_overview}, the algorithm used
 to tag jets as coming from a $b$-quark, is the Combined Secondary
-Vertex (CSV) alogrithm.  Differences have been observed in the
+Vertex (CSV) algorithm.  Differences have been observed in the
 measured efficiency for $b$-tagging jets between data and
 simulation~\cite{CMS-PAS-BTV-11-004}.  To account for these efficiency
 differences, a scale factor to correct the MC $b$-tagging
 efficiency. Moreover, we found that the CSV distribution 
 of MC doesn't match that of data, there making it necessary to correct
-the shape of the discrinant distribution as well.  
+the shape of the discriminant distribution as well.  
 
 \par A $b$-tag CSV reweighting method has been developed to address
 not only the difference in efficiency, but the difference in the shape
 of the discriminant distribution as well \cite{CMS-AN-2013-130}.  
 The method is based on a "tag and probe'' approach.   Events with two
 leptons, and exactly two jets are initially selected.  One jet is
-required to pass a "tight'' working point, characterised by a CSV
+required to pass a "tight'' working point, characterized by a CSV
 value with $\sim90\%$ efficiency and $\le1\%$ mistag rate.  Then, the
 other jet is required to pass the analysis working point to assess the
-efficency there.  The results are binned by $p_{T}$, $\eta$, jet
-flavour and CSV value.  
+efficiency there.  The results are binned by $p_{T}$, $\eta$, jet
+flavor and CSV value.  
 
 \par For MC the truth is available to assess the efficiency.  For
 data, the full 8~TeV DoubleMu, DoubleElectron and MuEG datasets taken
@@ -362,7 +362,7 @@ flavor jets. The scale factors for light flavor jets will account for
 the mis-tag efficiency discrepancy between data and MC. For events
 with one jet passing the tag requirements, the CSV
 distribution for the probe jet in given $p_{t}$ and $\eta$ 
-bins. Tthe total MC yields are normalized to the data yields. In order to
+bins. The total MC yields are normalized to the data yields. In order to
 account for heavy or light flavor contamination, the MC is divided into
 samples of heavy flavor and light flavor components and then
 non-relevant part from data is subtracted. The scale factor is then
@@ -376,8 +376,8 @@ SF(CSV, p_{t}, \eta) = \frac{Data - MC_{A}}{MC_{B}}
 \noindent where A, B = heavy flavor component or light flavor component.
 
 \par Unlike the last analysis, where scale factors where applied to
-adjust the value of the CSV distirbution, correction factor for this
-anlaysis is an event-by-event weight.  If the jet is a $b$ flavor jet,
+adjust the value of the CSV distribution, correction factor for this
+analysis is an event-by-event weight.  If the jet is a $b$ flavor jet,
 a heavy flavor scale factor is assigned to it; if it is a $c$ flavor
 jet, a flat scale factor of 1.0 is applied, with the same uncertainty
 as a $b$ flavor jet would receive; otherwise, if it is a
@@ -393,14 +393,14 @@ SF_{total} = \prod_{i}^{N_{\mathrm{jets}}} SF_{jet_{i}} = SF_{jet_{1}} \cdot SF_
 \subsection{Lepton + Jets Selection}
 \label{LJ_selection_II_overview}
 
-\par As with the previous analusis, the final selection requires
+\par As with the previous analysis, the final selection requires
 events have exactly one tight lepton ($e$ or $\mu$), and at least four
 jets. Events with any additional loose or tight leptons are vetoed so
 this analysis can later be combined with a diLepton final state,
 without double counting events. Additionally, each event must have at
 least three jets with $p_{T} > 40$ GeV/c. 
 
-\par As before, events are further catergorized by the reconstructed jet, and
+\par As before, events are further categorized by the reconstructed jet, and
 $b$-tagged jet multiplicities:
 
 \begin{itemize}
@@ -421,7 +421,7 @@ data observed in each category. Figure~\ref{fig:LJ_numJets_numTags}
 shows the data/MC comparison for the number of jets and the number of
 tagged jets distributions for events with one lepton (\(e\) or
 \(\mu\)), \(\ge\) 4 jets and \(\ge\) 2 b-tags, it also includes a plot
-shwoing the event yields for data and each MC background in each
+showing the event yields for data and each MC background in each
 category. 
 
 \begin{figure}[hbtp]
@@ -487,7 +487,7 @@ the distribution of events for signal and background, with 40 bins
 with a maximum and minimum value determined by the the largest and
 smallest values respectively for either the signal or the background.
 Out of these 10 variables, the BDT selects the variable which
-maximizes the Gini Index, which is given by the equation:
+maximizes the Ginni Index, which is given by the equation:
 
 \begin{equation}\label{eq:gini_index}
 Gini Index = p\times(1 - p)
@@ -501,7 +501,7 @@ afterwards, creating a background-like set of events, and a
 signal-like set of events.  After the first cut is chosen, the
 distributions for each of the variables above and below the cut value
 are are re-examined.  A second cut on a variable, at a point that
-maximizes the Gini Index is found, for each of the signal and
+maximizes the Ginni Index is found, for each of the signal and
 background-like regions formed by the first cut.  This process
 continues for a user-defined number of cuts.  Since the input events
 are known to be singal-like or background-like, the purity of the
@@ -575,7 +575,7 @@ of decision trees are created.  This analysis uses a forest of 100
 decision trees to separate the \ttH signal from the \ttjets
 background.  
 
-\par  Overtaining was checked in a similar procedure that was used in
+\par  Overtraining was checked in a similar procedure that was used in
 the last analysis.  Half the events for the signal and background
 samples are used to train the BDT, the other half are used to test
 it.  The response to the BDT is calculated for both the testing and
@@ -583,7 +583,7 @@ training sample, and the Kolomogrov-Smirnoff statistic is used as a
 figure of merit to judge the compatibility of the two samples.  As
 seen in figure \ref{fig:bdt_testTrain}, there are no significant
 deviations between  the testing and training samples, implying that no
-overtraining has occured.  
+overtraining has occurred.  
 
 \begin{figure}[hbtp]
  \begin{center}
@@ -612,7 +612,7 @@ chosen through their ranking using the separation figure of merit
 given in equation \ref{eq:separation}.  The categories most sensitive
 to signal, 5 jets, $\ge$4 $b$-tags; $\ge$6 jets, $\ge$3 $b$-tags; and
 $\ge$6 jets, $\ge$4 $b$-tags all include a variable, which is the
-output discriminat of a dedicated BDT trained to separate \ttH signal
+output discriminant of a dedicated BDT trained to separate \ttH signal
 from \ttbb background.  Table \ref{tab:bdt_input_vars} gives a
 description of each of the input variables used.  Table
 \ref{tab:vars_by_category} describes which variables are used in each
@@ -625,13 +625,13 @@ the variables used in the dedicated \ttH, \ttbb BDT.
  \label{tab:bdt_input_vars}
  \begin{tabular}{| l | p{10cm} |}
    \hline
-   abs \(\Delta \eta\) (leptonic top, bb)      					&  Delta-R between the leptonic top reconstructed by the best higgs mass algorithm and the $b$-jet pair chosen by the algorithm \\
-   abs \(\Delta \eta\) (hadronic top, bb)						&  Delta-R between the hadronic top reconstructed by the best higgs mass algorithm and the $b$-jet pair chosen by the algorithm \\
+   abs \(\Delta \eta\) (leptonic top, bb)      					&  Delta-R between the leptonic top reconstructed by the best Higgs mass algorithm and the $b$-jet pair chosen by the algorithm \\
+   abs \(\Delta \eta\) (hadronic top, bb)						&  Delta-R between the hadronic top reconstructed by the best Higgs mass algorithm and the $b$-jet pair chosen by the algorithm \\
    aplanarity  									&  Event shape variable equal to \(\frac{3}{2}(\lambda_{3})\), where \(\lambda_{3}\) is the third eigenvalue of the sphericity tensor as described in~\cite{PhysRevD.1.1416}. \\
    ave CSV (tags/non-tags)    							&  Average $b$-tag discriminant value for $b$-tagged/non-$b$-tagged jets \\
    ave \(\Delta R\)(tag,tag)  							&  Average \(\Delta R\) between $b$-tagged jets \\
-   best higgs mass   								&  A minimum-chi-squared fit to event kinematics is used to select two $b$-tagged jets as top-decay products. Of the remaining $b$-tags, the invariant mass of the two with highest $E_{t}$ is saved. \\
-   best \(\Delta R\)(b,b)								& The \(\Delta R\) between the two $b$-jets chosen by the best higgs mass algorithm \\
+   best Higgs mass   								&  A minimum-chi-squared fit to event kinematics is used to select two $b$-tagged jets as top-decay products. Of the remaining $b$-tags, the invariant mass of the two with highest $E_{t}$ is saved. \\
+   best \(\Delta R\)(b,b)								& The \(\Delta R\) between the two $b$-jets chosen by the best Higgs mass algorithm \\
    closest tagged dijet mass  							&  The invariant mass of the two $b$-tagged jets that are closest in \(\Delta R\)  \\
    dev from ave CSV (tags)  							&  The square of the difference between the $b$-tag discriminant value of a given $b$-tagged jet and the average $b$-tag discriminant value among $b$-tagged jets, summed over all $b$-tagged jets \\
    highest CSV (tags)  								&  Highest $b$-tag discriminant value among $b$-tagged jets \\
@@ -644,9 +644,9 @@ the variables used in the dedicated \ttH, \ttbb BDT.
    lowest CSV (tags)  								&  Lowest $b$-tag discriminant value among $b$-tagged jets \\
    mass(lepton,jet,MET)  								&  The invariant mass of the 4-vector sum of all jets, leptons, and MET \\
    mass(lepton,closest tag) 							& The invariant mass of the lepton and the closest $b$-tagged jet in \(\Delta R\) \\
-   max \(\Delta \eta\) (jet, ave jet \(\eta\))  					&  max difference between jet eta and avg deta between jets \\
-   max \(\Delta \eta\) (tag, ave jet \(\eta\)) 					&  max difference between tag eta and avg deta between jets \\
-   max \(\Delta \eta\) (tag, ave tag \(\eta\)) 					&  max difference between tag eta and avg deta between tags \\
+   max \(\Delta \eta\) (jet, ave jet \(\eta\))  					&  max difference between jet eta and avg delta eta between jets \\
+   max \(\Delta \eta\) (tag, ave jet \(\eta\)) 					&  max difference between tag eta and avg delta eta between jets \\
+   max \(\Delta \eta\) (tag, ave tag \(\eta\)) 					&  max difference between tag eta and avg delta eta between tags \\
    median inv. mass (tag pairs)							&  median invariant mass of all combinations of $b$-tag pairs \\
    M3										& The invariant mass of the 3-jet system with the largest transverse momentum. \\
    MHT  										&  Vector sum of transverse momentum for all jets with \(p_{T}~>~30\) GeV/c \\
@@ -709,7 +709,7 @@ the variables used in the dedicated \ttH, \ttbb BDT.
   \multicolumn{1}{|c|}{\(H_{2}\)} 					&  ave CSV (tags)  				&  ave CSV (tags) \\
   \multicolumn{1}{|c|}{sphericity} 					&  second-highest CSV (tags)			&  third-highest CSV (tags) \\
   \multicolumn{1}{|c|}{(\(\Sigma\) jet \(p_{T}\))/(\(\Sigma\) jet E)} 	&  third-highest CSV (tags) 			&  fourth-highest CSV (tags) \\
-  \multicolumn{1}{|c|}{third-highest CSV (jets)} 			&  fourth-highest CSV (jets)  			&  best higgs mass \\
+  \multicolumn{1}{|c|}{third-highest CSV (jets)} 			&  fourth-highest CSV (jets)  			&  best Higgs mass \\
   \multicolumn{1}{|c|}{fourth-highest CSV (jets)} 			&  ttbb/ttH BDT  				&  ttbb/ttH BDT \\
 
 \hline
@@ -739,7 +739,7 @@ MET    	    							& abs \(\Delta \eta\) (hadronic top, bb)				&  abs \(\Delta \
  	    							& abs \(\Delta \eta\) (leptonic top, bb)				&  $\sqrt{\Delta \eta(t^{lep}, bb) \times \Delta \eta(t^{had}, bb)}$ \\                
      	    							& sphericity								&  ave CSV (tags) \\					                               
      	    							& aplanarity								&  best \(\Delta R\)(b,b) \\				                               
-     	    							& min \(\Delta R\)(tag,tag)						&  best higgs mass \\					                               
+     	    							& min \(\Delta R\)(tag,tag)						&  best Higgs mass \\					                               
      	   	 						& jet 3 \(p_{T}\)							&  median inv. mass (tag pairs) \\  			                               
 \hline
 \end{tabular}
@@ -1133,7 +1133,7 @@ sys & shift & $t\bar{t}H(125)$ & $\ttbar+\bbbar$  \\ \hline
   each evaluated independently for light-flavor and heavy-flavor.  The
   purity uncertainty is controlled by a separate nuisance parameter
   for light and heavy flavor.  Variation of this parameter is
-  associated with changing the prediction of simuated heavy-flavor
+  associated with changing the prediction of simulated heavy-flavor
   events in the light-flavor control region, and visa versa. Figures
   ~\ref{fig:CSVLF} and~\ref{fig:CSVHF} and Table~\ref{tab:CSVRates}
   show the effect of this uncertainty on the final BDT shapes.  The
@@ -1292,7 +1292,7 @@ sys & shift & $t\bar{t}H(125)$ & $\ttbar+\bbbar$  \\ \hline
  \hline
 
    \end{tabular} 
-   \caption{This table summarizes the rate effect of the six indepedent nuisance parameters that characterize the $b$-tag uncertainties.  (Note:  The $b$-tag rate uncertainties associated with JES variations are already included with the JES rate uncertainties in Table~\ref{tab:JESShift}.  The impact of statistical uncertainties is in the heavy-flavor and light-flavor scale factor extraction is incorporated using two separate nuisance parameters, as described above.  The uncertainty labeled ``Stat. Err. 1'' represents statistical uncertainties resulting a linear distortion of the CSV scale factor, while the one labeled ``Stat. Err. 2'' corresponds to nonlinear distortions.}
+   \caption{This table summarizes the rate effect of the six independent nuisance parameters that characterize the $b$-tag uncertainties.  (Note:  The $b$-tag rate uncertainties associated with JES variations are already included with the JES rate uncertainties in Table~\ref{tab:JESShift}.  The impact of statistical uncertainties is in the heavy-flavor and light-flavor scale factor extraction is incorporated using two separate nuisance parameters, as described above.  The uncertainty labeled ``Stat. Err. 1'' represents statistical uncertainties resulting a linear distortion of the CSV scale factor, while the one labeled ``Stat. Err. 2'' corresponds to nonlinear distortions.}
    \label{tab:CSVRates}
  \end{table} 
 
@@ -1424,7 +1424,7 @@ Dibosons        &       &            &       &            &       & 3.5\% &  \\
                                     & down & +17.6\% & +20.8\% & +23.3\% \\ 
  \hline
    \end{tabular} 
-   \caption{This table summarizes the rate effect of shifting $Q^2$ scale uncertainty for Madgraph.  Note that the shifts are made indepdently for the following topologies: $\ttbar + 0p$, $\ttbar + 1p$, $\ttbar+2p$, $\ttcc$, $\ttbar+b$, and $\ttbar+\bbbar$.}
+   \caption{This table summarizes the rate effect of shifting $Q^2$ scale uncertainty for Madgraph.  Note that the shifts are made independently for the following topologies: $\ttbar + 0p$, $\ttbar + 1p$, $\ttbar+2p$, $\ttcc$, $\ttbar+b$, and $\ttbar+\bbbar$.}
    \label{tab:Q2Rates}
  \end{table} 
 
@@ -1592,18 +1592,18 @@ $140~\GeVcc$ & 9.0 & 9.6 & [6.9,13.7] & [5.2,18.9] \\
 
 \par  For the full 19.4 \fbinv of 8 TeV data collected by the CMS
 detector, an updated search for the Standard Model Higgs boson produced in
-association with top-quark pairs has been perfromed.  The increase in
+association with top-quark pairs has been performed.  The increase in
 expected sensitivity did not increase by a factor of $\sim2$ that one
 would naively expect from increasing the statistics by a factor of
 $\sim4$.  This is because, largely due to the different set of
 systematic uncertainties used, the analysis entered a regime where
 statistical uncertainty was no longer the dominant factor that
-degraded senstivity.  If this data set was repeatedly
+degraded sensitivity.  If this data set was repeatedly
 collected, allowing for statistical fluctuations, it should be
 expected that, for a Standard Model Higgs boson, with mass, $m_{H} =
 125 \GeV$, that 95$\%$ of the results would fail to observe the \ttH
 signal unless its cross-section was modified by a factor of 4.9.  From
-simulations alone, this exepected factor is 4.7, an difference of less
+simulations alone, this expected factor is 4.7, an difference of less
 than 1 $\sigma$ from the observed data.    
 
 \par The results of this analysis were combined with previous results
