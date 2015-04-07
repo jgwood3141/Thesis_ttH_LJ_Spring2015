@@ -34,9 +34,9 @@ $b$-tags are included in the signal region.
 \end{figure}
 
 \par The largest background contribution is $t\bar{t}+$jets
-production.  This process can be decomposed in terms of the flavour of
+production.  This process can be decomposed in terms of the flavor of
 the extra jets produced in the event.  For this analysis, the
-inclusive $t\bar{t}$jets process is broken into three sub-proccesses:
+inclusive $t\bar{t}$jets process is broken into three sub-processes:
 $t\bar{t}+$ light flavor jets where one or more 
 of the jets is mistagged, $t\bar{t}+c\bar{c}$ and $t\bar{t}+b\bar{b}$.
 Smaller background contributions come from $W+$jets, $Z+$jets, single
@@ -54,7 +54,7 @@ on the $b\bar{b}$ invariant mass spectrum.
 
 \par Although there is poor resolution on the Higgs boson resonance in
 the $b$-quark dijet mass spectrum, there are a number of kinematic
-variables that can be used to discrminate betweenthe $t\bar{t}+$jets
+variables that can be used to discriminate between the $t\bar{t}+$jets
 background and the $t\bar{t}H$ signal.  For example, the recoil of
 the Higgs off of the $t\bar{t}$ system, the decay products of the top
 quarks from the $t\bar{t}H$ signal will have, on average, a slightly
@@ -71,7 +71,7 @@ limits on $t\bar{t}H$ production in the data set.
 
 \par The following sections will describe the analysis that was
 carried out on the first 5 \fbinv~of data collected by the CMS
-detector.  This includes definitions of the simulatied samples used to
+detector.  This includes definitions of the simulated samples used to
 estimate the expected backgrounds in data, the event selection used to
 isolate the $t\bar{t}H$ signal, the application of MVA techniques,
 evaluation of systematic uncertainties, and upper limit setting on the
@@ -84,10 +84,10 @@ production rate of $t\bar{t}H$.
 \par $pp$ collision data is collected by the CMS detector, as
 described in previous chapters.  The signal and background signatures
 are estimated using Monte Carlo simulation techniques.  The simulation
-involves the combination of the most current theoretical and emperical
+involves the combination of the most current theoretical and empirical
 information about the interactions of the known particles.  The
 simulation of an event is decomposed into a sequence of calculations and
-each signal and background process is calculated seperately.
+each signal and background process is calculated separately.
 Information about Monte Carlo event simulation techniques is taken
 from reference \cite{Agashe:2014kda}.  
 
@@ -95,21 +95,21 @@ from reference \cite{Agashe:2014kda}.
 background process is to calculate the probability that some set
 initial state particles with a certain momentum will create a final
 state of particles with a certain momentum.  For example, in the case of
-the \ttH signal, this is the probability that two protons travelling
+the \ttH signal, this is the probability that two protons traveling
 towards each other along the z-axis (beam-line), each with a given
 energy and momentum, will produce a top quark pair and a Higgs boson,
 each with some momentum vector, $\hat{p}_{t}$, $\hat{p}_{\bar{t}}$,
 $\hat{p}_{H}$, which points into the hermetic CMS detector.  As
-discused in section \ref{qft_overview}, this probability is calculated
-by examing the lagrangian of the theory describing the process and
+discussed in section \ref{qft_overview}, this probability is calculated
+by examining the Lagrangian of the theory describing the process and
 calculating its scattering amplitude, to some order in perturbation
-theory, using the Feynman rules derived from the lagrangian.  The
+theory, using the Feynman rules derived from the Lagrangian.  The
 scattering amplitude is a multi-dimensional probability function,
-which depends on the inital and final state momentum of the particles
-in the process.  Thus, given some intial state momentum, $p_{i}$, it tells you
-the probability to produce a final state particle with mometum
+which depends on the initial and final state momentum of the particles
+in the process.  Thus, given some initial state momentum, $p_{i}$, it tells you
+the probability to produce a final state particle with momentum
 $p_{f}$.  It is understandable that the scattering amplitude is
-often reffered to as a matrix element, since given a vector of initial
+often referred to as a matrix element, since given a vector of initial
 state particles with a certain momentum, the scattering amplitude
 would be a matrix, whose elements would give the probability of
 creating the vector of final state particles.  
@@ -118,20 +118,20 @@ creating the vector of final state particles.
 collide, it is their quarks or gluons which are actually interacting.
 The momentum distribution of each of the valence quarks, the gluons,
 and the sea quarks, which account for quantum fluctuations that
-temporarily create all other quark flavours inside the proton, is described by
+temporarily create all other quark flavors inside the proton, is described by
 a Parton Distribution Function (PDF).  The PDF describes what fraction
 of the proton's momentum is distributed among each of its
 constituents.  Due to the large strength of the QCD interactions that
-bind the quarks together, the PDF cannot be calculated perturbitavely
-from QCD.  It has been measured empircally, and is composition of the
+bind the quarks together, the PDF cannot be calculated perturbatively
+from QCD.  It has been measured empirically, and is composition of the
 results of several experiments over the past decades.  
 
 \par Event generator algorithms are computer programs
-that, given a lagrangian of particle theory, will calculate the
+that, given a Lagrangian of particle theory, will calculate the
 matrix element for a given process.  Then, the generator is provided
-with values of the momentum of the intial state particles.  For
-protons, this would the beam energy of the LHC.  To assign mometum
-values to the constinuent quarks or gluons that actually participate
+with values of the momentum of the initial state particles.  For
+protons, this would the beam energy of the LHC.  To assign momentum
+values to the constituent quarks or gluons that actually participate
 in the interaction, random values are sampled from the probability
 distributions described by a PDF that is provided to the algorithm.
 Given a choice of momentum for the input particles, a value and
@@ -173,7 +173,7 @@ is described in detail in the previous chapter.  It proceeds with
 simulated, instead of real detector signals.  
 
 \par The entire event simulation, reconstruction, and subsequent
-anlaysis is implemented in a software framework that is known as CMS
+analysis is implemented in a software framework that is known as CMS
 Software (CMSSW).  
 
 \subsection{Data Samples}
@@ -308,14 +308,14 @@ large instantaneous luminosities to the CMS experiment.  Consequently,
 the average number of overlapping events reconstructed in single
 detector readout window has also increased.  When these overlapping
 events, known as pileup events, occur within the same bunch crossing,
-which as reffered to as "in-time'' pileout.  Alternatively,
+which as referred to as "in-time'' pileup.  Alternatively,
 "out-of-time'' pileup, comes from energy deposits in the detector from
 previous bunch crossings and from very early arrivals of particles
 from the forthcoming bunch crossing.  Pileup events can affect many
 aspects of the reconstruction a more interesting event, such as the
 degradation of lepton isolation and jet energy resolution.  The
 simulated samples used in the analysis must also have the same
-distribution of pilup events as what was measured in the data.
+distribution of pileup events as what was measured in the data.
 
 \par During the generation of the simulated samples used in the
 analysis, the average amount of expected pileup was unknown.  Events
@@ -330,9 +330,9 @@ The value of $\sigma_{inelastic} = 69.4$ mb was found to describe the data
 well.  To estimate the effect of the systematic uncertainty of this
 choice, the value was varied by $\pm 7\%$.  
 
-\par To guage the accuracy of the calibration of the pileup
+\par To gauge the accuracy of the calibration of the pileup
 distribution used in the simulated samples, a comparison of the
-number of reconstruced vertices between data and the simulated
+number of reconstructed vertices between data and the simulated
 $t\bar{t}$ MC sample is shown in figure~\ref{fig:PUrewgt}.  The
 unweighted MC distribution is shown in blue, the reweighted
 distribution in red, and the measured data in black points.  After
@@ -381,7 +381,7 @@ than the simulations.  The same effect was observed in 7 TeV data
 as well.  It was present, even after employing several sophisticated
 reconstruction techniques designed to mitigate pileup effects.  These
 techniques included the removal of charged hadrons in the
-particle-flow algorith, not associated with the primary vertex and
+particle-flow algorithm, not associated with the primary vertex and
 re-weighting the simulated samples to match the pileup distribution
 measured in the data.  
 
@@ -415,7 +415,7 @@ the data and the Monte Carlo $H_{T}$ distributions in each PU
 category.  By preparing a separate correction factor for each PU
 category smaller adjustments were made to well-modeled Low PU events and
 larger adjustments to the poorly modeled High PU events.  $H_{T}$
-shows the same mis-modelling as each of the jet $p_{T}$s and it
+shows the same mis-modeling as each of the jet $p_{T}$s and it
 effects all of the jet $p_{T}$s. This makes it a natural choice for a
 correction factor.
 
@@ -423,7 +423,7 @@ correction factor.
 by the correction factor, the uncorrected simulated distributions are
 used as $-1\sigma$ systematic uncertainty and the $+1\sigma$
 uncertainty is determined by doubling the correction factor. The
-factor of two for the $+1\sigma$ variation is motivated by the deisre
+factor of two for the $+1\sigma$ variation is motivated by the desire
 to provide a large enough systematic uncertainty to cover any possible
 over-correction of the simulations.  This is a reasonable choice
 because it creates a deviation that is the same size as the original
@@ -480,10 +480,10 @@ event is required to pass the following filters:
     the particles with a large transverse emmitance with limiting
     apertures.   
   \item HBHE noise filter with isolated noise rejection - this filters
-    spurious signals from the HCAL barrel and endcap subdetectors which
+    spurious signals from the HCAL barrel and endcap sub-detectors which
     are not associated with particles measured in a collision event. 
   \item HCAL laser filter - ensures that data is not taken
-    simulatenous with the laser calibration system
+    simultaneous with the laser calibration system
   \item ECAL dead cell trigger primitive (TP) filter - removes dead
     or noisy ECAL cells from being used in the reconstruction, these
     compose $<1\%$ of the total crystals in the ECAL
@@ -621,9 +621,9 @@ Additional variables not described are:
 
 \begin{itemize}
   \item $E_{T}$ - the transverse energy of the electron, which due to
-    its relatvily light mass, is approximately equal to its $p_{T}$
+    its relatively light mass, is approximately equal to its $p_{T}$
   \item ID - electron ID is passed on a multivariate analysis (MVA)
-  technique, which provides a discriminant value to seperate fake from
+  technique, which provides a discriminant value to separate fake from
   real electrons, and is trained with events that are required to pass
   a HLT trigger (mvaTrigV0), or not (mvaNonTrigV0).  The
   "passConversionVeto'' ID ensures that the electron has not been
@@ -665,9 +665,9 @@ has been calculated from data, as a function of pT and eta, as
 shown in figure ~\ref{fig:effSFHLT} for electrons and muons.  In order
 to reproduce the same the same response in the simulations as found in
 data, an event-by-event scale factor is applied to correct for this
-difference in effiency.  
+difference in efficiency.  
 
-\par The effiency in data was measured by selected events with two
+\par The efficiency in data was measured by selected events with two
 tight muons, or two tight electrons with an invariant mass in a range
 between 70 and 130 GeV.  This is centered on the $Z$ boson resonance,
 and ensures that the selected leptons are authentic.  The two leptons
@@ -677,7 +677,7 @@ field.  A "tag'' lepton is selected if has $p_{T}$>30 GeV, and passes
 the appropriate muon or electron trigger.  The second lepton, the
 "probe'' lepton, since selected as a pair coming from a $Z$ boson,
 should be identical to the tag lepton, and thus should be identically
-reconstructed.  The effiency is then the ratio of the number events where both
+reconstructed.  The efficiency is then the ratio of the number events where both
 tag and probe leptons pass the $p_{T}$ and trigger requirements over
 the number of events where only the tag lepton passes the $p_{T}$ and
 trigger requirements.  This study is repeated in bins of $p_{T}$ and
@@ -695,7 +695,7 @@ $\eta$ to remove any kinematic dependence on lepton efficiency.
 \par The combined ID, isolation, and trigger scale factor
 uncertainty is evaluated by looking at the variation of the scale
 factor as a function of parameters besides $p_T$ and $\eta$, such as
-pileup and $b$-tag scale factor reweigting.  A flat uncertainty of 4$\%$
+pileup and $b$-tag scale factor reweighting.  A flat uncertainty of 4$\%$
 covers the variations that are observed, and is thus adopted as a
 conservative estimate of the uncertainty on the combined lepton
 reconstruction efficiency.  
@@ -721,11 +721,11 @@ variables to ensure the reconstruction of authentic hadronic jets:
     charged particles to the total number of particles in the jet
   \item NHF - Neutral Hadron Fraction: the ratio of neutral
     particles to the total number of particles in the jet
-  \item NEF -  Neutral Electromangetic Fraction: the ratio of
+  \item NEF -  Neutral Electromagnetic Fraction: the ratio of
     photons to the total number of particles in the jet
   \item CHF - Charged Hadron Fraction: the ratio of charged hadrons to
     the total number of particles in the jet
-  \item NCH - Number of Charged Hadrons: raw charged hadron multiplicty
+  \item NCH - Number of Charged Hadrons: raw charged hadron multiplicity
   \item N$_{constituents}$ - Number of constituents, which can be charged
   and neutral hadrons, as well as non-prompt photons and leptons.  
 \end{itemize}
@@ -774,7 +774,7 @@ scale factor is needed to adjust for the difference in jet energy
 resolution as measured in data and predicted in simulation.  Table
 \ref{tab:JERtable} gives the scale factors, and uncertainties, as
 derived from dijet events ~\cite{CMS:2011esa} as a function of $\eta$
-only, since no signficant $p_{T}$ dependence was obsevered.  
+only, since no significant $p_{T}$ dependence was observed.  
 
 \begin{table}
 \centering
@@ -826,7 +826,7 @@ requirements:
 \noindent  Secondary vertices are decomposed into three categories.
 If a secondary vertex is found meeting the above criteria, it is a
 "reco vertex''.  If no secondary vertex is found meeting all the above
-criteria, the event can be classified as a "psuedo vertex'' if more
+criteria, the event can be classified as a "pseudo vertex'' if more
 than two tracks have a signed transverse impact parameter
 significance, relative to the primary vertex, greater than 2.  "No
 vertex'' is found if neither of the prior two classification criteria
@@ -836,21 +836,21 @@ can be met.
 create a single discriminating variable, using a likelihood ratio
 technique.  The following input variables are used:
 \begin{itemize}
-  \item The invariant mass of the charged particles assoicated with
+  \item The invariant mass of the charged particles associated with
     the secondary vertex
   \item The multiplicity of charged tracks associated with the primary
     vertex
   \item The distance between the primary and secondary vertex in the
     transverse plane, divided by its error (only used in reco vertex category)
-  \item The psuedorapidities of the charged particle tracks associated
+  \item The pseudorapidities of the charged particle tracks associated
     with the secondary vertices
   \item The track impact parameter significance of the highest $p_{T}$
     track with invariant mass larger than the charm quark threshold,
     1.5 GeV. 
 \end{itemize}
 
-\noindent The likelihood function is split to seperate between the
-charm and light-flavour backgrounds and is defined as:
+\noindent The likelihood function is split to separate between the
+charm and light-flavor backgrounds and is defined as:
 
 \begin{equation}\label{eq:csv_likelihood}
 \mathcal{L}^{b,c,q} =
@@ -859,12 +859,12 @@ f^{b,c,q}(\alpha)\times\prod_{i}f_{\alpha}^{b,c,q}(x_{i})
 
 \noindent where $\alpha$ = 1,2,3, denotes the different vertex
 categories, $x_{i}$ are the individual variables, $q$ stands for the
-light flavour quarks, while $b$ and $c$ stand for the bottom and charm
-quarks resepctively.  $f^{b,c,q}(\alpha)$ is the probabilty for a
-quark flavour $b,c,$ or $q$, to fall into category $\alpha$.
-$f_{\alpha}^{b,c,q}(x_{i})$ is the probabiltiy deensity
-function of the variable $x_{i}$ in catgory $\alpha$ for quark flavour
-$b,c,$ or $q$.  The combined descriminate is defined as
+light flavor quarks, while $b$ and $c$ stand for the bottom and charm
+quarks respectively.  $f^{b,c,q}(\alpha)$ is the probability for a
+quark flavor $b,c,$ or $q$, to fall into category $\alpha$.
+$f_{\alpha}^{b,c,q}(x_{i})$ is the probability density
+function of the variable $x_{i}$ in category $\alpha$ for quark flavor
+$b,c,$ or $q$.  The combined discriminate is defined as
 
 \begin{equation}\label{eq:csv_disc}
 d = f_{BG}(c)\times\frac{\mathcal{L}^{b}}{\mathcal{L}^{c} +
@@ -873,13 +873,13 @@ d = f_{BG}(c)\times\frac{\mathcal{L}^{b}}{\mathcal{L}^{c} +
 \end{equation}
 
 \noindent where $f_{BG}(c)$, and $f_{BG}(q)$ are
-the a-priori probabilities for the content of charm and light flavour
+the a-priori probabilities for the content of charm and light flavor
 quarks in non-b jets.  
 
 \par A jet is considered $b$-tagged if the CSV discriminant is greater
 than 0.679, which is the medium working point defined by the BTag
 Physics Object Group (POG)~\cite{btagOP}, defined in order to produce
-a light-flavour mistag rate at $\sim1\%$, with the reconstruction
+a light-flavor mistag rate at $\sim1\%$, with the reconstruction
 efficiency for real b-jets at $\sim70\%$.  
 
 \par Additionally, it is necessary to account for differences in the
@@ -889,11 +889,11 @@ An event weight scale factor is used to correct the MC $b$-tagging efficiency ($
 \epsilon_{tag}^{data}/\epsilon_{tag}^{MC}$).  The scale factor is
 measured for three different cuts, or working points, on the CSV
 discriminant value, and it is binned in terms of the $p_{T}$ and
-$\eta$ and flavour of the jet.  
+$\eta$ and flavor of the jet.  
 
-\par In addition to providing jet flavour identification for event
+\par In addition to providing jet flavor identification for event
 classification, the discriminant value of the algorithm will be used
-to seperate between \ttH signal and \ttjets background.  Therefore, a
+to separate between \ttH signal and \ttjets background.  Therefore, a
 correction value for the efficiency difference between data and MC over the whole range
 of discriminator values is needed, not just for three working points.
 This procedure was developed in the context of the search for the
@@ -923,7 +923,7 @@ and lower values of the CSV discriminant to make sure those values do
 not change (e.g., $CSV = 0.0$ and $CSV = 1.0$).  The whole range of
 CSV discriminant values is found by linearly interpolating between
 these five points (the three working points, and upper and lower limit
-of the discrimant range).
+of the discriminate range).
 
 
 \subsection{Lepton + Jets Selection}
@@ -931,12 +931,12 @@ of the discrimant range).
 
 \par The final Lepton+Jets (LJ) selection is finally carried out by
 requiring that events have exactly one tight lepton ($e$ or
-$\mu$), and at least four jets. Eevents with any additional loose or
+$\mu$), and at least four jets. Events with any additional loose or
 tight leptons are vetoed so this analysis can later be combined with a
 diLepton final state, without double counting events. Additionally,
 each event must have at least three jets with $p_{T} > 40$ GeV/c.
 
-\par Events are further catergorized by the reconstructed jet, and
+\par Events are further categorized by the reconstructed jet, and
 $b$-tagged jet multiplicities as follows:
 
 \begin{itemize}
@@ -1065,14 +1065,14 @@ Data & 3503 & 1646 & 1116 & 686 & 28 & 56 & 74 \\
 \label{mva_overview}
 
 \par As discussed in the chapter introduction, no single variable
-offers sufficient discriminating power, to seperate the \ttH signal
+offers sufficient discriminating power, to separate the \ttH signal
 from the \ttjets background.  Instead, the combined power of several
 input variables is utilized through a multivariate analysis (MVA)
 technique.  For this analysis, the MVA algorithm chosen from the sub-class
-of artifical neural network (ANN) algorithms, known as multi-layer
+of artificial neural network (ANN) algorithms, known as multi-layer
 perceptrons (MLPs).  The specific algorithm is the Clermond-Ferrand
 Multi-Layer Perceptron Artificial Neural Network (CFMlpANN).  It was
-first developed at the Universit´e Blaise Pascal in Clermont-Ferrand,
+first developed at the University´e Blaise Pascal in Clermont-Ferrand,
 for the ALEPH experiment at the LEP collider to search for the
 Standard Model Higgs and has also been utilized by the BABAR
 experiment to search for rare $B$ meson decays \cite{Hocker:2007ht}.
@@ -1111,7 +1111,7 @@ $n$-dimensional space onto a one-dimensional space.
 \end{figure}
 
 \par The multi-layer perceptron (MLP) is a specific type of
-arrangement of neurons.  Any number of nuerons are arranged into a
+arrangement of neurons.  Any number of neurons are arranged into a
 single layer, and connections to other neurons are only made if they
 are arranged in a successive layer \cite{Hocker:2007ht}.  This is
 known as feed-forward network, and a simple example with one input
@@ -1122,7 +1122,7 @@ formed by the neurons and allows for simplified calculations.
 \begin{figure}[hbtp]
  \begin{center}
    \includegraphics[width=1.0\textwidth]{Figures/Analysis_1_Diagrams/CFMlpANN_Architecture.pdf}
-   \caption{The CFMlpANN architechture used in this analysis features
+   \caption{The CFMlpANN architecture used in this analysis features
      two hidden layers, and 10 input variables for each jet/tag
      category (11 variables for the $\ge$6jets, $\ge$4$b$-tags
      category)}
@@ -1131,13 +1131,13 @@ formed by the neurons and allows for simplified calculations.
 \end{figure}
 
 \par This analysis uses an architecture that consists of two hidden
-layers, with $N$ and $N-1$ variables respecitvely, where $N$ is the
+layers, with $N$ and $N-1$ variables respectively, where $N$ is the
 number of input variables for the given jet/tag category.  An example
 diagram is shown in figure \ref{fig:cfmlpann_arch}.  The output of the
 CFMlpANN algorithm is one-dimensional discriminant with range from 0
 to 1, for background-like and signal-like events.  Each neuron
 response is the based on an activation function $A(\alpha)$, and a synapse
-repsonse, $\alpha$.  In this case, a sigmoid function is used as
+response, $\alpha$.  In this case, a sigmoid function is used as
 the activation function:
 
 \begin{equation}\label{eq:sigmoid}
@@ -1159,7 +1159,7 @@ y_{ANN} = \sum_{k=1}^{n-1}y_{k}^{(3)}w_{k1}^{(3)} = \sum_{k=1}^{n-1}A\left(
 \end{equation}
  
 \noindent where $n$ is the number of input variables for that jet tag
-category and $A$ is the sigmoid function described in eqution
+category and $A$ is the sigmoid function described in equation
 \ref{eq:sigmoid}.  
 
 \par The CFMlpANN is trained with \ttH signal events and inclusive
@@ -1218,13 +1218,13 @@ fluctuations in the input variable distributions of authentic signal
 events can lead to incorrect classification of the signal events when
 the CFMlpANN attempts to classify the data.  To avoid this, half of
 the simulated events for \ttH signal and \ttjets background are used
-during training.  After training, the other half are used to trest the
+during training.  After training, the other half are used to test the
 response of the algorithm.  If properly trained, the testing and
 training samples should have identical CFMlpANN responses.  The figure
 of merit used to assess this is the Kolomogrov-Smirnoff test, which
 computes the probability that two distributions have been sampled from
 the same underlying probability distribution.  The results of the
-training and testing for each of the jet/tag cateories is shown in
+training and testing for each of the jet/tag categories is shown in
 figure \ref{fig:ann_testTrain}.  No signs of overtraining are observed.
 
 
@@ -1308,7 +1308,7 @@ kinematics.  The $b$-jets produced by the Higgs boson tend to have a
 harder $p_{T}$ spectrum compared to $b$-jets produced from gluon
 radiation.  Additionally, the recoil of the Higgs off of the
 top-system produces small differences in the $p_{T}$ and invariant
-mass of the recosntructed \ttjets system. 
+mass of the reconstructed \ttjets system. 
 
 \begin{itemize}
   \item Jet 1 $\pt$ - the highest value of transverse jet momentum in
@@ -1354,7 +1354,7 @@ tagged jets
 \begin{itemize}
   \item Average $\Delta
     R(\text{j}_m^{\text{tag}},\text{j}_n^{\text{tag}})$  - the average
-    $\Delta$R spatial separation between all cominations of $b$-tagged
+    $\Delta$R spatial separation between all combinations of $b$-tagged
     jets in the event
   \item Minimum $\Delta
     R(\text{j}_m^{\text{tag}},\text{j}_n^{\text{tag}})$ - the smallest
@@ -1860,16 +1860,16 @@ $\ttbar + \bbbar$ & 50\% & No & Only $t\bar{t} + b\bar{b}$. \\
 
 
 \begin{description}
-  \item[Jet Energy Scale (JES):]  THe Jet Energy Scale systematic is
-    based on the uncertainy on the L1, L2, L3, and L2L3 residual
+  \item[Jet Energy Scale (JES):]  The Jet Energy Scale systematic is
+    based on the uncertainty on the L1, L2, L3, and L2L3 residual
     corrections to the reconstructed jet energy, as described in
     section \ref{jet_selection_overview}.  To evaluate the effect on
     the CFMlpANN output, the jet energy scale is shifted by one
     standard deviation up and down using the standard JetMET
     procedure~\cite{JESJetMET}.  For each variation, the jet energies 
-    are recalulated, allowing for new jets to pass the selection where
+    are recalculated, allowing for new jets to pass the selection where
     once they failed, or fail the selection where once they passed,
-    resulting in a migration of events across jet/tag cateogries.
+    resulting in a migration of events across jet/tag categories.
     Finally, the CFMlpANN response is recalculated, and the effect for
     signal and the \ttjets background is shown in figure
     \ref{fig:JESShift}. 
@@ -2044,23 +2044,23 @@ Dibosons        &       &            &       &            &       & 3.5\% &  \\
  \item[Luminosity:] The uncertainty on the luminosity estimate is 2.2\%.  This affects all rates.
 
  \item[Madgraph $Q^2$ Uncertainty:] Although that backgrounds are
-   normalizaed using NLO accurate theoretical caluclations, these are
+   normalized using NLO accurate theoretical calculations, these are
    only applicable to inclusive distributions.  To extrapolate these
    inclusive predictions to exclusive rates in particular jet bins
    requires the use of a Monte Carlo sample.  The {\sc
      Madgraph} generator is used at the matrix element level and
    includes tree-level calculations for processes with multiple
    additional jets, matched to the {\sc Pythia} parton shower to model
-   additional soft and colinear radiation.  Since the {\sc Madgraph +
-     Pythia} is tree-level, the choice of the renormalizations and
+   additional soft and collinear radiation.  Since the {\sc Madgraph +
+     Pythia} is tree-level, the choice of the renormalization and
    factorizations scales in this calculation has a significant
    impact.  To include the effects of this uncertainty, the
-   factorization and renomaralization scales are varied by a factor of
+   factorization and renormalization scales are varied by a factor of
    two.  The ideal way to study this effect would be to generate
   dedicated samples with the varied scale choice, however the required
   statistics to get a precise determination of the systematic effect
   is computationally prohibitive.  Therefore, as an alternative, we
-  reweight the amples, dividing by the appropriate power of $\alpha_s$
+  reweight the samples, dividing by the appropriate power of $\alpha_s$
   and the $pdf$ values at the original scale, and multiplying by the
   values at the new scale choice.  This reweighting procedure is supported by
   the CMS Monte Carlo Generators group, and has been validated against
@@ -2071,7 +2071,7 @@ Dibosons        &       &            &       &            &       & 3.5\% &  \\
   $t\bar{t}+b\bar{b}$ components of the $t\bar{t}$ sample.
   Figure~\ref{fig:Q2plots} shows the shape and rate variations for
   selected event categories.  To prevent the strength of the
-  $t\bar{t}+$jets constraint from overconstraining the
+  $t\bar{t}+$jets constraint from over-constraining the
   $t\bar{t}+b\bar{b}$ and $t\bar{t}+c\bar{c}$ components, we allow the
   Madgraph scale to vary independently for these three components. 
 
@@ -2089,14 +2089,14 @@ Dibosons        &       &            &       &            &       & 3.5\% &  \\
 \end{figure}
 
   \item[MC Statistics Uncertainty:]  To account for the effect of
-    limitied MC statistics in the analysis, a method described by
+    limited MC statistics in the analysis, a method described by
     Barlow and Beeston, is used to select regions of the CFMlpANN
     output that should have additional nuisance parameters applied
     \cite{BarlowBeeston,BarlowBeeston2}. For the CFMlpANN shapes of
     every MC process in all different categories, each bin is allowed
     to float within statistic uncertainty and a corresponding nuisance
     parameter is added. To make the limit computation more efficient
-    and stable, bins are removed as nuisance parametrs if the MC
+    and stable, bins are removed as nuisance parameters if the MC
     statistics uncertainty is negligible compared to the data
     statistics  uncertainty or where there is no appreciable
     contribution from signal. In total, there are 60 nuisance
@@ -2117,10 +2117,10 @@ Dibosons        &       &            &       &            &       & 3.5\% &  \\
     ranges between 1.2 and 1.8, depending on the scale choice.  To be
     conservative, an extra 50\% rate uncertainty is assigned to
     $t\bar{t}+b\bar{b}$ which corresponds to a K-factor of 1.7 for
-    $\sigma_{NLO}/\sigma_{Madgraph}$. Studies also showed consistantly
+    $\sigma_{NLO}/\sigma_{Madgraph}$. Studies also showed consistently
     that $t\bar{t}+b\bar{b}$ rate is correct to within factor of 2 in
     control regions dominated by $t\bar{t}+$light flavor statistics.
-    The extra 50\% rate uncertaity should possibly include additional
+    The extra 50\% rate uncertainty should possibly include additional
     uncertainty beyond the 20\% from $Q^{2}$ scale to account for the
     differences between NLO and Madgraph. 
 
@@ -2132,8 +2132,8 @@ Dibosons        &       &            &       &            &       & 3.5\% &  \\
      \ttjets.  The left plot shows is for the case of nominal \ttbb
      cross-section, the right plot shows the case for x2 \ttbb
      cross-section.  The left-most region of both plots is the most
-     sensistive to the \ttbb normalization, and shows no significant
-     improment in data to MC agreement, justifying the reasoning that
+     sensitive to the \ttbb normalization, and shows no significant
+     improvement in data to MC agreement, justifying the reasoning that
      an uncertainty larger than 50\% is needed.}
    \label{fig:ttbb_ttlf_disc}
  \end{center}
@@ -2141,10 +2141,10 @@ Dibosons        &       &            &       &            &       & 3.5\% &  \\
 
     In order to validate this assessment further, a dedicated CFMlpANN
     was trained to separate \ttbb from the \ttjets background.  In
-    order to have suffcient statistics, two jet/tag categories are
+    order to have sufficient statistics, two jet/tag categories are
     used: 5jets, $\ge$3$b$-tags, and $\ge$6jets, $\ge$3$b$-tags.  The
     nominal \ttbb cross section was doubled, in an attempt to observe
-    an improvment in the range of the discriminant that was enriched
+    an improvement in the range of the discriminant that was enriched
     in \ttbb.  However, as figure \ref{fig:ttbb_ttlf_disc} shows, no
     significant improvement was seen, justifying the reasoning that an
     uncertainty much larger  than 50\% is needed.  
@@ -2197,7 +2197,7 @@ $\pm1\sigma$ variations of the systematic uncertainty in question
 When building the likelihood, the systematic is associated to a
 nuisance parameter taken from a unit gaussian distribution, which is 
 used to parameterize a quadratic interpolation for shifts below the
-1$\sigma$ value of a given bin, and linearl interpolation for values beyond. 
+1$\sigma$ value of a given bin, and linear interpolation for values beyond. 
 
 \par To compare the compatibility of the data with the
 $background-only$ ($\mu=0$) and $signal+background$ hypotheses, where the signal
@@ -2222,7 +2222,7 @@ formed by creating $psuedo-datasets$ of the signal and background
 CFMlpANN distributions, with the values of $\hat{\theta}_{0}^{obs}$
 and $\hat{\theta}_{\mu}^{obs}$ fixed, but allowing the shapes and
 normalizations of the CFMlpANN distributions to vary within the
-constriants of the nuisance parameter shapes.  Once the $pdfs$ for
+constraints of the nuisance parameter shapes.  Once the $pdfs$ for
 each of the test statistics are constructed, the $p$-value associated
 with each hypothesis, $p_{\mu}$ and $p_{0}$, are evaluated by the
 following integrals:
@@ -2241,7 +2241,7 @@ background-only ) = \int_{\tilde{q}_{0}^{obs}}^{\inf}
 f(\tilde{q}_{\mu}|0,\hat{\theta}_{0}^{obs}) d\tilde{q}_{\mu} 
 \end{equation}
 
-\noindent for the $background-only$ hypothsis.  CL$_{s}(\mu)$ is
+\noindent for the $background-only$ hypothesis.  CL$_{s}(\mu)$ is
 calculated as a ratio of these $p$-values:
 
 \begin{equation}
@@ -2252,16 +2252,16 @@ CL_{s}(\mu) = \frac{p_{\mu}}{1-p_{0}}
 value of $\mu$ is adjusted until CL$_{s}$ = 0.05. 
 
 \par The frequentist CL$_s$ approach uses a large number of
-pseudo-experiments to extract the limit results.  The "asymptoptic''
+pseudo-experiments to extract the limit results.  The "asymptotic''
 approach makes an analytic approximation of the full CL$_s$ technique
 and therefore avoids throwing pseudo-experiments \cite{Cowan:2010js}.
 The $pdfs$, $f(\tilde{q}_{\mu}|\mu,
 \hat{\theta}_{\mu}^{obs})$, and $f(\tilde{q}_{\mu}|0,
 \hat{\theta}_{\mu}^{obs})$ are approximated as a falling exponential
-below $q_{\mu,A}$, and a guassian above, where $q_{\mu,A}$ is the test
+below $q_{\mu,A}$, and a Gaussian above, where $q_{\mu,A}$ is the test
 statistic of the Asimov dataset, the background only hypothesis with
 nominal nuisance value parameters.  The asymptotic approach is used
-for optimization and the results of this anlaysis.  For the limits set
+for optimization and the results of this analysis.  For the limits set
 from the combined Lepton+Jets and di-Lepton channels, using both 7 and
 8 TeV data, the results are calculated using the full CL$_s$
 treatment. Comparisons have shown that limits obtained with the two
@@ -2278,12 +2278,12 @@ values of these nuisance parameters are constrained according to the
 uncertainties summarized in Table~\ref{tab:systSummary}.  Except where
 noted below, each row in that table represents a single nuisance
 parameter, completely correlated across all categories and processes
-to which it applies.  The execptions to this approach are as follows: 
+to which it applies.  The exceptions to this approach are as follows: 
 
 \begin{itemize}
 
   \item  In the case of the Madgraph $Q^2$ uncertainty, there are
-    separate nuisance parameters for each of the three compents of the
+    separate nuisance parameters for each of the three components of the
     $t\bar{t}$ background ($+$jets, $+b\bar{b}$, and $+c\bar{c}$).
     Furthermore, for the $t\bar{t}+$jets component, the uncertainty is
     actually broken into three nuisance parameters for the
@@ -2291,11 +2291,11 @@ to which it applies.  The execptions to this approach are as follows:
     extra parton, or at least two extra partons. 
 
   \item For the $b$-tagging efficiency and mistag rate uncertainties,
-    the rate and shape components are described by seprate,
+    the rate and shape components are described by separate,
     independent nuisance parameters.  Furthermore, each event
     selection category has its own, independent nuisance parameter.
     This is to prevent the high statistics background rich regions
-    from overconstraining the shape uncertainties in the lower
+    from over-constraining the shape uncertainties in the lower
     statistics, more signal rich regions. 
 
 \end{itemize}
@@ -2306,7 +2306,7 @@ between event categories, care has been taken to correlate properly
 the different categories so that, for example, increasing the jet
 energy scale will cause the appropriate increases and decreases in the
 yields in various categories.  The binning of the CFMlpANN output is
-chosen to mimize the impact of MC statistics and, as described in 
+chosen to minimize the impact of MC statistics and, as described in 
 section~\ref{systematics_overview} the MC statistics for bins where
 the MC statistical uncertainty causes a significant impact are
 accounted for. 
@@ -2366,7 +2366,7 @@ collected, allowing for statistical fluctuations, it should be
 expected that, for a Standard Model Higgs boson, with mass, $m_{H} =
 125 \GeV$, that 95$\%$ of the results would fail to observe the \ttH
 signal unless its cross-section was modified by a factor of 9.5.  From
-simulations alone, this exepected factor is 5.4, an difference of less
+simulations alone, this expected factor is 5.4, an difference of less
 than 2 $\sigma$ from the observed data.    
 
 \par The results of this analysis were combined with previous results
