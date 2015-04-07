@@ -5,8 +5,8 @@
 sophisticated multivariate analysis (MVA) techniques to perform signal
 extraction and limit setting.  However, there are several improvements
 that can still be made to optimize signal extraction and increase
-sensistivity.  The following section will describe the implementation
-of the latest simulation techniques in order to improve the modelling
+sensitivity.  The following section will describe the implementation
+of the latest simulation techniques in order to improve the modeling
 the signal and background processes.  The final section will discuss
 variables from these new simulations that can be used to enhance the
 identification of final state jets with their roles in the \ttbar
@@ -18,7 +18,7 @@ system.
 %
 %\par After unblinding, and limit setting, there is an \textit{a
 % posteriori} opportunity to study the event selection and
-%cateogrization with respect to the ublinded data.  The effects of
+%categorization with respect to the unblinded data.  The effects of
 %loosening the jet and lepton \PT thresholds, down to 25 \GeV, showed
 %improvement in the observed limits.  However, when the limits with
 %this new selection were performed in a blinded manner, the expected
@@ -58,7 +58,7 @@ the matrix element level, but when the parton shower occurs in Pythia
 8, an additional jet can be generated, creating two event from a
 single underlying theoretical contribution.  The removal of these
 overlapping events is carried out by a method known as FXFX
-merging \cite{Frederix:2012ps}.  This alorithm tracks the heritage of
+merging \cite{Frederix:2012ps}.  This algorithm tracks the heritage of
 final state jets, in order to determine whether it was created as part
 of the matrix element or later during the parton shower.  Due to the
 higher accuracy of modeling the kinematics of partons calculated in
@@ -72,7 +72,7 @@ aMC@NLO.
 \ttH and \ttjets backgrounds will improve the kinematic modeling of
 these high-jet multiplicity processes.  A dedicated \ttbb sample with
 a large number of events generated with this framework would improve
-the modelling of the irreducible background.  Unfortunately, these
+the modeling of the irreducible background.  Unfortunately, these
 event generation tools were only recently released and the
 computational time required to generate samples with the equivalent
 statistical power of those used in the previous analyses is
@@ -81,9 +81,9 @@ the following samples were created using the process described above
 with 500,000 events each: 
 
 \begin{itemize}
-  \item \ttbar + 0, 1, and 2 addtional jets
+  \item \ttbar + 0, 1, and 2 additional jets
   \item \ttbb
-  \item \ttH + 0, and 1 addtional jets
+  \item \ttH + 0, and 1 additional jets
 \end{itemize}
 
 \noindent The number of events generated is not sufficient to create a
@@ -139,9 +139,9 @@ for the incorrect associations in green.
 \end{figure}
 
 \par The implementation of Madspin in the aMC@NLO framework allows for
-the highest precsion on the spin correlations of the decay
+the highest precision on the spin correlations of the decay
 products from the \ttH and \ttbar systems.  The angular relationships
-among the decay products provide additional discrimition power for the
+among the decay products provide additional discrimination power for the
 correct association of jets to their roles in the \ttH and \ttbar
 systems.  The spin correlations of the decay products are enhanced by
 boosting to a reference frame that is more sensitive to differences in
@@ -175,10 +175,10 @@ lepton and the down-type $W$-boson daughter.
     \includegraphics[width=0.31\textwidth]{Figures/Analysis_Improvement_Diagrams/tt012jets__h_genParticle_ttbarZMFrame_topsRest_cos3dPolarAngle_lepB_hadB__vs__h_recoJets_correctAssoc_ttbarZMFrame_topsRest_cos3dPolarAngle_lepB_hadB__vs__h_recoJets_wrongAssoc_ttbarZMFrame_topsRest_cos3dPolarAngle_lepB_hadB__unitNorm.pdf}
     \includegraphics[width=0.31\textwidth]{Figures/Analysis_Improvement_Diagrams/tt012jets__h_genParticle_ttbarZMFrame_topsRest_cos3dPolarAngle_lep_hadWupQ__vs__h_recoJets_correctAssoc_ttbarZMFrame_topsRest_cos3dPolarAngle_lep_hadWupQ__vs__h_recoJets_wrongAssoc_ttbarZMFrame_topsRest_cos3dPolarAngle_lep_hadWupQ__unitNorm.pdf}
     \includegraphics[width=0.31\textwidth]{Figures/Analysis_Improvement_Diagrams/tt012jets__h_genParticle_ttbarZMFrame_topsRest_cos3dPolarAngle_lepB_hadB__vs__h_recoJets_correctAssoc_ttbarZMFrame_topsRest_cos3dPolarAngle_lepB_hadB__vs__h_recoJets_wrongAssoc_ttbarZMFrame_topsRest_cos3dPolarAngle_lepB_hadB__unitNorm.pdf}
-    \caption{The cosine of the anlge between the momentum
+    \caption{The cosine of the angle between the momentum
       three-vectors for the $b$-quarks from the top decays (left), the
     lepton and the up-type $W$ boson daughter (center), and the lepton
-  and the down-ype $W$ boson daughter (right)}
+  and the down-type $W$ boson daughter (right)}
     \label{fig:aMCatNLO_cos3dPolar}}
 \end{figure}
 
@@ -205,7 +205,7 @@ uniform for incorrectly associated jets.
     \caption{The difference in the $\phi$ coordinate between the momentum
       three-vectors for the $b$-quarks from the top decays (left), the
     lepton and the up-type $W$ boson daughter (center), and the lepton
-  and the down-ype $W$ boson daughter (right)}
+  and the down-type $W$ boson daughter (right)}
     \label{fig:aMCatNLO_deltaPhi}}
 \end{figure}
 
@@ -218,7 +218,7 @@ contained in the cluster, where the curvature of each track tells the
 charge of the hadron creating the signature.  Since there are many
 hadrons clustered together to form a jet, there is a large degradation
 on resolution of the charge of the jet, however for the peak of this
-distrubtion is negative for correctly associated jets, and positive
+distribution is negative for correctly associated jets, and positive
 for incorrect jets, as shown in figure
 \ref{fig:aMCatNLO_lepJetCharge}.  
 
@@ -265,7 +265,7 @@ following variables:
 dedicated MVA for each of the \ttbar+X backgrounds, where X is light
 flavor, single $c$, $c\bar{c}$, single $b$, and $b\bar{b}$.  A
 dedicated \ttbb and even a \ttcc sample with sufficiently large enough
-events to train an MVA would be ideal.  The discrimiants from each of
+events to train an MVA would be ideal.  The discriminants from each of
 the backgrounds would be combined as input variables to a second MVA,
 in order to produce a discriminant for how likely the event is from a
 \ttH decay.  
