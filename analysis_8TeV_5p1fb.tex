@@ -11,12 +11,15 @@ pair signatures recorded in the detector.  The decay of the two $W$
 bosons define the categorizations of $t\bar{t}$-like events as either
 all-hadronic, in the case of zero charged leptons; semi-leptonic, in
 the case of one charged lepton; and di-leptonic in the case of two
-charged leptons.  the detector. This analysis describes the
-Lepton+Jets (LJ) channel, where one of the $W$ bosons has decayed to an
+charged leptons.  This analysis describes the Lepton+Jets (LJ)
+channel, where one of the $W$ bosons has decayed to an 
 electron or a muon and the corresponding neutrino, while the other $W$
 boson decays into two quarks.  To compensate for the low production
 rate, the analysis is optimized to search for the Higgs boson decaying
-to a $b$-quark pair.  The final state is then $l \nu qqbbbb$, where
+to a $b$-quark pair, since the branching ratio to $b$-quarks is
+highest for the mass range favored by the exclusion limits of LEP and
+the Tevatron, as well as preliminary results by CMS and ATLAS, for a
+Higgs boson mass of $\sim125$ GeV.  The final state is then $l \nu qqbbbb$, where
 $l$ refers to either an electron or a muon.  In the case of an ideal
 reconstruction of the event, the LJ signal events contains six jets,
 four of which are $b$-tagged. However, to accommodate jets lost to
@@ -123,7 +126,7 @@ a Parton Distribution Function (PDF).  The PDF describes what fraction
 of the proton's momentum is distributed among each of its
 constituents.  Due to the large strength of the QCD interactions that
 bind the quarks together, the PDF cannot be calculated perturbatively
-from QCD.  It has been measured empirically, and is composition of the
+from QCD.  It has been measured empirically, and is a composition of the
 results of several experiments over the past decades.  
 
 \par Event generator algorithms are computer programs
@@ -160,10 +163,10 @@ generation is to simulate the response of the CMS detector when this
 process occurs at the interaction point where the LHC beams are made
 to collide.  The Geant 4 detector simulation framework is used to
 create a model of each and every detector element, electronic readout,
-and mechanical support structures that make compose CMS.  Geant 4 is
-also about to describe how energy is deposited into the different
-types of material as a particle passes through each detector element,
-simulating the response each element to presence of a particle in the
+and mechanical support structures that compose CMS.  Geant 4 also
+describes how energy is deposited into the different types of material
+as a particle passes through each detector element, simulating the
+response of each element to the presence of a particle in the 
 detector.  The digitization and signal acquisition of the electronics
 that read-out the detector elements is also simulated.  
 
@@ -194,12 +197,12 @@ determined to have a 2.2\% uncertainty.
 \hline\hline
  Dataset & Run Range & Integrated Luminosity \\
 \hline
-/SingleMu/Run2012A-PromptReco-v1/AOD & 190645--193621 & 0.87 fb$^{-1}$ \\
-/SingleMu/Run2012B-PromptReco-v1/AOD & 193834--196531 & 4.21 fb$^{-1}$ \\
+SingleMu, Run2012A, PromptReco & 190645--193621 & 0.87 fb$^{-1}$ \\
+SingleMu, Run2012B, PromptReco & 193834--196531 & 4.21 fb$^{-1}$ \\
 {\bf Total SingleMu} & {\bf 190645--196531} & {\bf 5.08 fb$\mathbf{^{-1}}$} \\
 \hline
-/SingleElectron/Run2012A-PromptReco-v1/AOD & 190645--193621 & 0.87 pb$^{-1}$ \\
-/SingleElectron/Run2012B-PromptReco-v1/AOD & 193834--196531 & 4.21 pb$^{-1}$ \\
+SingleElectron, Run2012A, PromptReco & 190645--193621 & 0.87 pb$^{-1}$ \\
+SingleElectron, Run2012B, PromptReco & 193834--196531 & 4.21 pb$^{-1}$ \\
 {\bf Total SingleElectron} & {\bf 190645--196531} & {\bf 5.08 fb$\mathbf{^{-1}}$} \\
 \hline\hline
 \end{tabular}
@@ -224,23 +227,23 @@ Table~\ref{tab:sigSamples}.
 \hline\hline
 Mass & Dataset & Cross Sect. \\
 \hline
-110 GeV/c$^2$ & /TTH\_HToAll\_M\_110\_8TeV\_FastSim\_pythia6/lannon-TTH\_HToAll\_M\_110\_8TeV \_FastSim\_pythia6-dff75535147f54d9d70123289019ff88/USER & 0.1887 pb \\
+110 GeV/c$^2$ & TTH, Inclusive Decays, $M_{H} = 110$, Pythia6 & 0.1887 pb \\
 \hline
-115 GeV/c$^2$ & /TTH\_HToAll\_M\_115\_8TeV\_FastSim\_pythia6/lannon\-TTH\_HToAll\_M\_115\_8TeV \_FastSim\_pythia6\-f8fb6149649333009ec8462da200312d/USER & 0.1663 pb \\
+115 GeV/c$^2$ & TTH, Inclusive Decays, $M_{H} = 115$, Pythia6 & 0.1663 pb \\
 \hline
-120 GeV/c$^2$ & /TTH\_HToAll\_M\_120\_8TeV\_FastSim\_pythia6/puigh\-TTH\_HToAll\_M\_120\_8TeV \_FastSim\_pythia6\-95111b4e2be5b1aa536a508d15d97f92/USER & 0.1470 pb \\
+120 GeV/c$^2$ & TTH, Inclusive Decays, $M_{H} = 120$, Pythia 6 & 0.1470 pb \\
 \hline
-122.5 GeV/c$^2$ & /TTH\_HToAll\_M\_122p5\_8TeV\_FastSim\_pythia6/slaunwhj\-TTH\_HToAll\_M\_122p5\_8TeV \_FastSim\_pythia6\-1e2fdcc9a937df208692b27cb39e0444/USER & 0.1383 pb \\
+122.5 GeV/c$^2$ & TTH, Inclusive Decays, $M_{H} = 122.5$, Pythia 6 & 0.1383 pb \\
 \hline
-125 GeV/c$^2$ & /TTH\_HToAll\_M\_125\_8TeV\_FastSim\_pythia6/lwming\-TTH\_HToAll\_M\_125\_8TeV \_FastSim\_pythia6\-191b19832235558f2b51f7486e9bfa14/USER & 0.1302 pb \\
+125 GeV/c$^2$ & TTH, Inclusive Decays, $M_{H} = 125$, Pythia 6 & 0.1302 pb \\
 \hline
-127.5 GeV/c$^2$ & /TTH\_HToAll\_M\_127p5\_8TeV\_FastSim\_pythia6\_crabv2/jgwood\-TTH\_HToAll \_M\_127p5\_8TeV\_FastSim\_pythia6\_crabv2\-8cc2ab68d00e069563cff89a5be0e271/USER & 0.1227 pb \\
+127.5 GeV/c$^2$ & TTH, Inclusive Decays, $M_{H} = 127.5$, Pythia 6 & 0.1227 pb \\
 \hline
-130 GeV/c$^2$ & /TTH\_HToAll\_M\_130\_8TeV\_FastSim\_pythia6/neu\-TTH\_HToAll\_M\_130\_8TeV \_FastSim\_pythia6\-5052c957a6363e9b1d5c2be444ffc86d/USER & 0.1157 pb \\
+130 GeV/c$^2$ & TTH, Inclusive Decays, $M_{H} = 130$, Pythia 6 & 0.1157 pb \\
 \hline
-135 GeV/c$^2$ & /TTH\_HToAll\_M\_135\_8TeV\_FastSim\_pythia6/lwming\-TTH\_HToAll\_M\_135\_8TeV \_FastSim\_pythia6\-c8734ad98f674743d713309ea4b6ad34/USER & 0.1031 pb \\
+135 GeV/c$^2$ & TTH, Inclusive Decays, $M_{H} = 135$, Pythia 6 & 0.1031 pb \\
 \hline
-140 GeV/c$^2$ & /TTH\_HToAll\_M\_140\_8TeV\_FastSim\_pythia6/lwming\-TTH\_HToAll\_M\_140\_8TeV \_FastSim\_pythia6\-cf0b11a8bdd755ec1ec3d7a35c9a88be/USER & 0.09207 pb \\
+140 GeV/c$^2$ & TTH, Inclusive Decays, $M_{H} = 140$, Pythia 6 & 0.09207 pb \\
 \hline\hline
 \end{tabular}
 \caption{List of signal MC datasets and cross sections used to determine the SM expectation.}
@@ -267,33 +270,34 @@ background MC samples and associated cross sections.
 \hline\hline
 Sample & Dataset & Cross Sect. \\
 \hline
-$t\bar{t}+$jets & /TTJets\_MassiveBinDECAY\_TuneZ2star\_8TeV\-madgraph\-tauola/Summer12\-PU\_S6\_START52\_V9\-v1/AODSIM & 225.197 pb \\
+$t\bar{t}+$jets & TTJets, Madgraph & 225.197 pb \\
 \hline
-$t\bar{t}+W$ & /TTWJets\_8TeV\-madgraph/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 0.249 pb \\
+$t\bar{t}+W$ & TTWJets, Madgraph & 0.249 pb \\
 \hline
-$t\bar{t}+Z$ & /TTZJets\_8TeV\-madgraph\_v2/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 0.208 pb \\
+$t\bar{t}+Z$ & TTZJets, Madgraph & 0.208 pb \\
 \hline
-$W+$jets & /WJetsToLNu\_TuneZ2Star\_8TeV\-madgraph\-tarball/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 36257.2 pb \\
+$W+$jets & WJets to Leptons, Madgraph & 36257.2 pb \\
 \hline
 $Z/\gamma^* +$~jets & & \\
-$M\_{\ell\ell} > $50 GeV/c$^2$ & /DYJetsToLL\_M\-50\_TuneZ2Star\_8TeV\-madgraph\-tarball/Summer12\-PU\_S7\_START52\_V9\-v2/AODSIM & 3503.17 pb \\
-10 GeV/c$^2 < M\_{\ell\ell} < $50 GeV/c$^2$ & /DYJetsToLL\_M\-10To50filter\_8TeV\-madgraph/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 860 pb \\
+$M\_{\ell\ell} > $50 GeV/c$^2$ & DYJets to Leptons $M_{\ell\ell}>$50, Madgraph & 3503.17 pb \\
+10 GeV/c$^2 < M\_{\ell\ell} < $50 GeV/c$^2$ & DYJets to Leptons
+                                              $10<M_{\ell\ell}<50$, Madgraph & 860 pb \\
 \hline
 Single $t$ & & \\
-$s$\-channel & /T\_s\-channel\_TuneZ2star\_8TeV\-powheg\-tauola/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 3.79 pb\\
-$t$\-channel & /T\_t\-channel\_TuneZ2star\_8TeV\-powheg\-tauola/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM &  56.4 pb \\
-$tW$ & /T\_tW\-channel\-DR\_TuneZ2star\_8TeV\-powheg\-tauola/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 11.1 pb \\
+$s$\-channel & T, s\-channel, Powheg & 3.79 pb\\
+$t$\-channel & T, t\-channel, Powheg &  56.4 pb \\
+$tW$ & T, tW\-channel, Powheg & 11.1 pb \\
 \hline
 Single $\bar{t}$ & & \\
-$s$\-channel & /Tbar\_s\-channel\_TuneZ2star\_8TeV\-powheg\-tauola/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 1.76 pb\\
-$t$\-channel & /Tbar\_t\-channel\_TuneZ2star\_8TeV\-powheg\-tauola/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 30.7 pb \\
-$tW$ & /Tbar\_tW\-channel\-DR\_TuneZ2star\_8TeV\-powheg\-tauola/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM  & 11.1 pb \\
+$s$\-channel & $\bar{T}$, s\-channel, Powheg & 1.76 pb\\
+$t$\-channel & $\bar{T}$, t\-channel, Powheg & 30.7 pb \\
+$tW$ & $\bar{T}$, tW\-channel, Powheg  & 11.1 pb \\
 \hline
-$WW$ & /WW\_TuneZ2star\_8TeV\_pythia6\_tauola/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 54.8 pb \\
+$WW$ & WW, Pythia6 & 54.8 pb \\
 \hline
-$WZ$ & /WZ\_TuneZ2star\_8TeV\_pythia6\_tauola/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 32.3 pb \\
+$WZ$ & WZ, Pythia6 & 32.3 pb \\
 \hline
-$ZZ$ & /ZZ\_TuneZ2star\_8TeV\_pythia6\_tauola/Summer12\-PU\_S7\_START52\_V9\-v1/AODSIM & 7.7 pb \\
+$ZZ$ & ZZ, Pythia6 & 7.7 pb \\
 \hline\hline
 \end{tabular}
 \caption{List of background MC datasets and cross sections used for normalization.}
@@ -308,7 +312,7 @@ large instantaneous luminosities to the CMS experiment.  Consequently,
 the average number of overlapping events reconstructed in single
 detector readout window has also increased.  When these overlapping
 events, known as pileup events, occur within the same bunch crossing,
-which as referred to as "in-time'' pileup.  Alternatively,
+which is referred to as "in-time'' pileup.  Alternatively,
 "out-of-time'' pileup, comes from energy deposits in the detector from
 previous bunch crossings and from very early arrivals of particles
 from the forthcoming bunch crossing.  Pileup events can affect many
@@ -322,7 +326,7 @@ analysis, the average amount of expected pileup was unknown.  Events
 were thus simulated with a conservatively large estimate of the pileup
 distribution, so that if the measured data revealed a smaller average
 value, the simulation could be reweighted to match the data.  
-For the simulation, number of interactions is a user defined value
+For the simulation, the number of interactions is a user defined value
 added to every generated event.  For the data, the number of pileup
 interactions for each unit of time depends on the instantaneous luminosity for each bunch pair and the
 total inelastic cross section, $\sigma_{inelastic}$, of the proton.
@@ -673,7 +677,7 @@ between 70 and 130 GeV.  This is centered on the $Z$ boson resonance,
 and ensures that the selected leptons are authentic.  The two leptons
 are additionally required to have opposite charge, which is measured
 by the direction of the curvature of their tracks in the magnetic
-field.  A "tag'' lepton is selected if has $p_{T}$>30 GeV, and passes
+field.  A "tag'' lepton is selected if has $p_{T}>30$ GeV, and passes
 the appropriate muon or electron trigger.  The second lepton, the
 "probe'' lepton, since selected as a pair coming from a $Z$ boson,
 should be identical to the tag lepton, and thus should be identically
@@ -805,9 +809,9 @@ requirements:
 \begin{itemize}
   \item At least 8 hits in the pixel and silicon tracker, with at
     least 2 hits in the pixel detector
-  \item tracks must have $p_{T}$>1 GeV
-  \item $\chi^{2}$/NDF of the fitted track < 10
-  \item $|d0|$ - transverse impact parameter < 2mm, since $b$-quarks
+  \item tracks must have $p_{T}>$1 GeV
+  \item $\chi^{2}$/NDF of the fitted track $< 10$
+  \item $|d0|$ - transverse impact parameter $< 2$mm, since $b$-quarks
     will on average travel 0.45 mm in the detector before decaying
 \end{itemize}
 
@@ -816,9 +820,9 @@ requirements:
   \item The transverse distance between the primary and secondary
     vertices, $L_{T}$, is between 100 $\mu$m and 2.5 cm
   \item The ratio of $L_{T}$ and the uncertainty on it's measurement,
-    $L_{T}/\sigma_{L_{T}}$>3 
+    $L_{T}/\sigma_{L_{T}}>$3 
   \item The invariant mass formed by adding the four-vectors of all
-    the tracks forming the secondary vertex < 6.5 GeV
+    the tracks forming the secondary vertex $< 6.5$ GeV
   \item The invariant mass falls outside a window near 50 MeV,
     corresponding to the $K_{S}^{0}$ resonance
 \end{itemize}
@@ -1323,7 +1327,7 @@ mass of the reconstructed \ttjets system.
     four-vector formed by summing the four-vectors of the lepton, MET,
     and all selected jets in the event
   \item $M(\ell,\MET,\text{jets})$ - the invariant mass of the
-    four-vector formed by summing the four-vectors of the lepton, MET<
+    four-vector formed by summing the four-vectors of the lepton, MET,
     and all selected jets in the event
   \item Average
     $M((\text{j}_m^{\text{untag}},\text{j}_n^{\text{untag}}))$ - the
@@ -1399,19 +1403,29 @@ spherical harmonic, with polar angle calculated between jets i and j.
 from the b-tagging algorithm.  For many of the categories, the average
 $b$-tag discriminant of all of the jets in the event tends to be the
 most powerful single variable.  This is due to the high multiplicity
-of authentic $b$-jets in a \ttH event. 
+of authentic $b$-jets in a \ttH event.  Additionally, since the
+$b$-quarks are coming from high mass sources, such as the top-quark
+and the Higgs boson, they will, on average, have a higer momentum in
+the transverse plane than $b$-jets originating from gluon radiation,
+as in \ttbb events. This allows for this high transverse momentum
+$b$-jets to travel a further distance inside the detector before
+decaying, making the significance of impact parameter of the secondary
+vertex much higher, increasing the probability it will be tagged as a
+$b$-jet by the CSV algorithm.  Thus, variables related to the value
+$b$-tagging discriminant provide the greatest signal extraction
+power.  
 
 \begin{itemize}
   \item $\mu^{\text{CSV}}$ - the average value of the output of the
-    CSV algorithm for all selected jets in the event.  
+    CSV algorithm for all $b$-tagged jets in the event.  
   \item $(\sigma_n^{\text{CSV}})^2$ - the variance of the average value of the output of the
-    CSV algorithm for all selected jets in the event. 
+    CSV algorithm for all $b$-tagged jets in the event. 
   \item Highest CSV value - the highest value of the CSV discriminant
-    for any selected jet in the event 
+    for any $b$-tagged jet in the event 
   \item 2$^{nd}$-highest CSV value - the second highest value of the CSV discriminant
-    for any selected jet in the event 
+    for any $b$-tagged jet in the event 
   \item Lowest CSV value - the lowest value of the CSV discriminant
-    for any selected jet in the event 
+    for any $b$-tagged jet in the event 
 \end{itemize}
 
 \par The modeling of the input variables is compared against data for
@@ -1903,14 +1917,14 @@ sys & shift & $t\bar{t}H(120)$ & $t\bar{t}$  \\ \hline
 
 \item[Jet Energy Resolution (JER):]  The jet $p_T$ resolution in MC
   differs from that observed in data by approximately 10\% in a $\eta$
-  dependent way, as described in table \ref{tab:JERtab}, as per the
+  dependent way, as described in table \ref{tab:JERtable}, as per the
   recommendations of the JetMET group~\cite{JERJetMET}.  The value of
   the jet $p_T$  is adjusted according to the formula:
 \begin{equation}\label{eq:jer_formula}
 p_T^{\prime} = \max{\left[0,p_T^{gen}+c(p_T^{reco}-p_T^{gen})\right]}
 \end{equation}
 
-  The correction factor $c$ is taken from table \ref{tab:JERtab}.  To
+  The correction factor $c$ is taken from table \ref{tab:JERtable}.  To
   assess the effect of the systematic uncertainty on the JER, the
   value of $c$ is shifted up and down by standard deviation, the JER
   correction is applied to the jets using this new $c$ value, and the
@@ -2359,14 +2373,14 @@ Higgs Mass & Observed & Median & 68\% C.L. Range &  95\% C.L. Range  \\ \hline
 \par  For this first 5.1 \fbinv of data collected by the CMS detector,
 the first search for the Standard Model Higgs boson produced in
 association with top-quark pairs.  Although there have been no
-observed sign of Higgs production in association with top quarks,
+observed signs of Higgs production in association with top quarks,
 upper limits are set on the production cross-section,  using the
 statistical methods  described above.  If this data set was repeatedly
 collected, allowing for statistical fluctuations, it should be
 expected that, for a Standard Model Higgs boson, with mass, $m_{H} =
 125 \GeV$, that 95$\%$ of the results would fail to observe the \ttH
 signal unless its cross-section was modified by a factor of 9.5.  From
-simulations alone, this expected factor is 5.4, an difference of less
+simulations alone, this expected factor is 5.4, a difference of less
 than 2 $\sigma$ from the observed data.    
 
 \par The results of this analysis were combined with previous results
@@ -2377,3 +2391,18 @@ of all of the channels allowed for an upper limit of 5.8 times
 the predicted Standard Model cross section.  This is less than
 1$\sigma$ away from the expected factor of 5.2 from simulations
 alone.  
+
+\par The technique of using a simultaneous fit of the signal and
+background simulations accross each of the jet/tag categories was
+developed in the 7 TeV analysis.  My specific contributions included
+the creation of software to identify physics objects with variables
+and selections optimized for the 8 TeV dataset.  The validation of the
+selection was acheived by synchronization with a \ttbar cross-section
+analysis, careful inspection of the calibration factors used, and the
+evaluation of the simulations against data in the lower jet and tag
+multiplicity categories (to avoid signal bias).  Additionally, I was
+responsible for the training, testing, and validation of the CFMlpANN
+algorithm used in this analysis.  Finally, I performed limit
+calculations and evaluated normalization and pull distributions using
+the asymptotic limit setting method to validate the performance of the
+limit setting technique.  
