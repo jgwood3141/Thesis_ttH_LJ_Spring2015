@@ -286,7 +286,7 @@ of different gauge groups~\cite{th:Yang_Mills}.  Their most important
 accomplishment was developing this procedure for non-abelian groups.
 These are groups, where the transformation does not involve a simple
 variable $\alpha(x)$, but rather an entire matrix of dimension n$>$2.
-These matrices do no commute with each other, and their work developed
+These matrices do not commute with each other, and their work developed
 the procedure for applying local gauge invariance described above to
 the more complex, higher dimensional symmetries, such as $SU(2)$ and
 $SU(3)$.  Consider the case of $SU(2)$ symmetry.  The theory is
@@ -669,7 +669,7 @@ massless gauge bosons, but necessary for massive bosons.
 
 \par For this case of an abelian symmetry $U(1)$, it was shown that if a
 complex scalar field, which interacts with itself and another vector
-field, can gains a non-zero vacuum expectation value.  The Lagrangian can
+field, can gain a non-zero vacuum expectation value.  The Lagrangian can
 be expanded about this new minimum, generating a mass term for the
 vector field.  One of the degrees of freedom of the original complex
 scalar field is then absorbed as a longitudinal polarization state of
@@ -1384,21 +1384,28 @@ m_{W} =&~ 80.376 \pm 0.0033\GeV
 
 \begin{figure}
    \centering
-   \begin{subfigure}[h]{0.3\textwidth}
+   \begin{subfigure}[h]{0.45\textwidth}
      \includegraphics[width=\textwidth]{Figures/Experimental_Results/Nnu.eps}
      \caption{Measurement of the width of $Z$ boson from LEP, comparing the hypotheses of
     2, 3, or 4 neutrino generations \cite{ex:LEP_Z-Pole_image}} \label{fig:lep_Z_3_families}
    \end{subfigure}
    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
       % (or a blank line to force the subfigure onto a new line)
-   \begin{subfigure}[h]{0.3\textwidth}
+   \begin{subfigure}[h]{0.45\textwidth}
      \includegraphics[width=\textwidth]{Figures/Experimental_Results/top_mass_tevatron_2012.eps}
      \caption{Measurement of the top mass from the CDF detector at the
        Tevatron \cite{ex:CDF_Top_Mass_image}} \label{fig:topMass_CDF}
    \end{subfigure}
    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
       % (or a blank line to force the subfigure onto a new line)
-   \begin{subfigure}[h]{0.3\textwidth}
+   \begin{subfigure}[h]{0.45\textwidth}
+     \includegraphics[width=\textwidth]{Figures/Experimental_Results/tevComboLLR_July27.eps}
+     \caption{Exclusions of Higgs mass values as of 2011, from the LEP
+    and Tevatron experiments \cite{CDFandD0:2011aa}} \label{fig:Higgs_exclusion}
+   \end{subfigure}
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      % (or a blank line to force the subfigure onto a new line)
+   \begin{subfigure}[h]{0.45\textwidth}
      \includegraphics[width=\textwidth]{Figures/Experimental_Results/CMS_higgsMass_scan_1d_all.pdf}
      \caption{Measurement of the Higgs mass from the CMS detector at
        the LHC \cite{ex:CMS_Higgs_Mass_image}} \label{fig:higgsMass_CMS}
@@ -1422,7 +1429,16 @@ reports a $m_{t} = 173.18 \pm 0.56 \pm 0.75~\GeV$. It was the last
 quark predicted by the CKM matrix to be observed, and earned Makoto
 Kobayashi and Toshihide Maskawa the nobel prize in 2008 for their work
 extending the quark sector to three families and parameterizing their
-electroweak mixing.    
+electroweak mixing.
+
+\par After the discovery of the top-quark, the last remaining particle
+that was predicted by the Standard Model, and remained to be observed
+was the Higgs Boson.  Although the LEP and Tevatron experiments were
+unable to observe the Higgs, they were able to exclude a large range
+of possible masses \cite{CDFandD0:2011aa}.  The combined results of
+both experiments, as of 2011, only allowed the possible masses of 115
+$< m_{Higgs} <$155 GeV, and $m_{Higgs}>176$ GeV, as shown in figure
+\ref{fig:ex_milestones_sm}(\subref{fig:Higgs_exclusion}).  
 
 \par Yet another milestone was reached in 2012, when the CMS and ATLAS
 detectors at CERN announced the observation of a new boson, with
@@ -1508,8 +1524,9 @@ at $m_{H} = 125\GeV$ and $\sqrt{s}=8\TeV$ is given as:
 \text{~~QCD Scale Unc.}^{+0.2\%}_{-0.2\%}~~\pm
 \text{~~PDF+$\alpha_{S}$ Unc.}^{+2.6\%}_{-2.8\%}~~\pbinv 
 \end{equation}
+
 \noindent Figure
-\ref{fig:feynman_diagrams__higgs_production}(\subref{fig:higgs_production_vbf})
+\ref{fig:feynman_diagrams__higgs_production}(\subref{fig:higgs_production_vbf}) 
 shows a Feynman diagram for VBF production.  The large coupling to the
 $W,Z$ bosons helps to make this the sub-dominant production mechanism
 at the LHC.  However, the gluon content of the proton at \TeV energies
@@ -1526,6 +1543,7 @@ electroweak corrections are similar to that of the Drell-Yan, so much
 of the technology to compute the cross-section can be borrowed from
 existing EW calculations.  The cross section for $m_{H} = 125\GeV$ and
 $\sqrt{s}=8\TeV$ is:  
+
 \begin{equation}\label{eq:vh_xs}
 \begin{aligned}
 \sigma_{WH} =&~ 0.7046~~\pm \text{~~QCD Scale Unc.}^{+1.0\%}_{-1.0\%}~~\pm
@@ -1534,9 +1552,10 @@ $\sqrt{s}=8\TeV$ is:
 \text{~~PDF+$\alpha_{S}$ Unc.}^{+2.5\%}_{-2.5\%}~~\pbinv 
 \end{aligned}
 \end{equation}
+
 \noindent Figure
 \ref{fig:feynman_diagrams__higgs_production}(\subref{fig:higgs_production_vh})
-shows the Feynman diagram for VH production.  This channel is most
+shows the Feynman diagram for VH production.  This channel is most 
 useful for identifying hadronic decays of the Higgs, since the
 associated gauge boson can decay to leptons, giving a strong kinematic
 handle over backgrounds that would normally overwhelm a similar search
@@ -1723,8 +1742,8 @@ the final state kinematics of its decay products will be very similar.
 \par The last backgrounds to consider are the electroweak production
 of $W$ and $Z$ bosons in association with jets, as well as $WW$, $WZ$, and
 $ZZ$ pairs in association with jets.  Figure
-\ref{fig:feynman_diagrams__Vjets_VV} shows the Feynman diagrams for
-these processes, where the $V$, stands in for wither $W$ or $Z$
+\ref{fig:feynman_diagrams__Vjets__VV} shows the Feynman diagrams for
+these processes, where the $V$, stands in for whether $W$ or $Z$
 bosons.  For a semileptonic selection of \ttH events, $Z$ plus jets
 events enter from a mis-identification of one of the leptons from the
 $Z$ boson decay.  Extra FSR/ISR radiation is also to leave a similar
@@ -1766,7 +1785,7 @@ of matter not described by the theory.  Observations of the cosmic microwave bac
 from the Plank telescope have estimated that only $\sim5\%$ of the
 observable universe is composed of ordinary
 matter~\cite{BSM_Planck}. The remaining composition is divided between  
-Dark Matter ($\sim27\%$, and $\sim68\%$ respectively).  Evidence for
+Dark Matter and Dark Energy ($\sim27\%$, and $\sim68\%$ respectively).  Evidence for
 Dark Matter also comes from discrepancies between the observed
 rotational velocities of galaxies, and the observed mass
 distributions, suggesting the presence of additional form of matter
@@ -1785,8 +1804,8 @@ eV^{2}|$~\cite{BSM_neutrinoDeltaM12_kamland}.  In 2006, the MINOS
 experiment reported
 $|{\Delta}m_{23}=0.0027 eV^{2}|$~\cite{BSM_neutrinoDeltaM23_minos}.
 
-\par One of the largest theoretical problems with the Standard Model,
-comes the mechanism which made it all possible- the Higgs.  In
+\par One of the largest theoretical problems with the Standard Model
+comes from the mechanism which made it all possible- the Higgs.  In
 equation \ref{eq:ewk_lagrangian_unbroken} there are terms that couple
 the Higgs boson to itself, $-{\lambda}vh^{3}$, and
 $-\frac{1}{4}{\lambda}h^{4}$.  When computing NLO effects, these terms
