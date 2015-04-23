@@ -17,7 +17,7 @@ hadrons, photons, electrons, and muons directly.  Tau leptons, are
 measured indirectly through a careful reconstruction of its decay
 products.  The hermetic coverage allows the detection of neutrinos by
 measuring a momentum imbalance in a given collision.  The detector is
-assembled in five sections and weights over 14,000 tons.  The
+assembled in five sections and weighs over 14,000 tons.  The
 "Compact" part of the experiment's name comes from its relatively
 small volume for a modern particle detector, with length of 28.7 m
 and a diameter of 15.0 m.  Ironically, this is as tall as most 4-5
@@ -86,7 +86,7 @@ plastic scintillator material layered between the absorber tiles
 samples the energy of hadrons.  The tracker, ECAL, and HCAL systems
 are all contained in the bore of the 3.8 T solenoid from the CMS
 namesake.  This device bends the trajectory of charged particles as
-the traverse the detector, and the curvature of this bend is used to
+they traverse the detector, and the curvature of this bend is used to
 obtain information on the charge and momentum of the measured
 particle.  The muon system sits outside of the solenoid structure, and
 uses three types of detection systems: drift tubes (DTs), resistive
@@ -638,7 +638,7 @@ that light from the lead tungstate crystals would produce while
 collisions were occurring in the detector.  The driving circuits are
 the same as those used in the LED system in the end-caps at point 5
 (the location of CMS at CERN), with the exception that the current
-limiting resistors are larger.  They are Dallas Semiconductor
+limiting resistors are larger.  The driving circuits are Dallas Semiconductor
 DS1040Z-D70 Programmable One-Shot Pulse Generators.  The TTL signals
 from the FPGA serve as a trigger for a Dallas Semiconductor pulse
 generator chip on the board that generates a 30 nSec pulse, so there
@@ -887,7 +887,7 @@ posing with some of the shells.
    \centering
   \includegraphics[width=0.7\textwidth]{Figures/CMS_Diagrams/HCAL__OpticalReadout.pdf}
   \caption{Optical readout chain of the HCAL scintillator tiles
-    \cite{CMS:CMS_Machine_Chatrchyan:2008aa}. } \label{fig:hcal_navy_shells}
+    \cite{CMS:CMS_Machine_Chatrchyan:2008aa}. } \label{fig:hcal_optical_readout}
 \end{figure}
 
 \par When a hadron passes through a wedge, the brass and steel plates
@@ -1132,7 +1132,7 @@ endcap.
 \par In addition to RPCs, the muon endcap (ME) system, uses cathode
 strip chambers (CSCs) to provide additional spatial resolution on
 muons.  Each endcap has 4 layers of CSCs, with a trapezoidal shape,
-with 468 cathode strip chambers disturbed on each.  Three groups of 72
+with 468 cathode strip chambers distributed on each.  Three groups of 72
 are located on the inner disk, a group of 36 and a group of 72 in the
 second and third disk, and a group of 36 in the outer disk.  Figure
 \ref{fig:muon_csc_layout} shows the layout of a quarter section of the
@@ -1213,7 +1213,7 @@ calorimeter sums.  The $e/\gamma$ trigger searches for the highest
 energy trigger tower in the ECAL.  Within that trigger tower, it
 checks that the EM shower is contained in a 2$\times$5 array of crystals
 and that the ratio of ECAL to HCAL energies is less than 5$\%$.  It is
-considered an isolated electron of all eight of its nearest neighbors
+considered an isolated electron if all eight of its nearest neighbors 
 pass these requirements, and a corner of five neighbors has energy
 below a threshold requirement.  It is considered a non-isolated
 electron if only the second highest $\ET$ broadside neighbor trigger
@@ -1226,14 +1226,14 @@ transverse energy, jet counts, and $\HT$ (scalar sum of transverse
 momentum), in addition to the highest rank isolated and non-isolated
 $e\/gamma$ candidates.  Jets are found in a clustering algorithm that
 looks for large energy deposits in 2$\times$12 cells of $\phi$ or
-$\eta$ that span 40$^{\circ}$ and half the detector in each of
-coordinates.  Up to four jets, and four tau jets from the HCAL and
+$\eta$ that span 40$^{\circ}$ and half the detector in each of the
+coordinates, respectively.  Up to four jets, and four tau jets from the HCAL and
 four jets from the HF are forwarded to the Global Trigger (GT).  
 
  \par The non-calorimeter based triggers are based on measurements of
  the DTs, CSCs, and RPCs in the muon drift chambers.  The barrel DTs
  look for hit patterns among neighboring tubes in successive layers,
- and fits a track segments in the $\eta$ and $\phi$ coordinates.  The
+ and fits a track segment in the $\eta$ and $\phi$ coordinates.  The
  endcap CSCs provide 3-dimensional track segments and are combined
  with the DTs to form tracks that are passed to the Global Muon
  Trigger (GMT).  The RPCs provide an independent set of tracks and
