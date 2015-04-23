@@ -1,0 +1,14 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}%
+\makeatletter
+\providecommand{\hrefCMSnoop }[0]{\@secondoftwo}%
+\makeatother
+\providecommand{\doi}{\texttt{doi:}\begingroup \urlstyle{tt}\Url}
+
+\bibitem{CMS:2012discovery}
+\hrefCMSnoop {} {{ CMS} Collaboration, ``{Observation of a new boson at a mass
+  of 125 GeV with the CMS experiment at the LHC}'',} \textit{ Phys.Lett.B}
+  (2012)
+\href{http://www.arXiv.org/abs/1207.7235}{\texttt{ arXiv:1207.7235}}.
+%%CITATION = ARXIV:1207.7235;%%.
+
+\end{thebibliography}\endgroup

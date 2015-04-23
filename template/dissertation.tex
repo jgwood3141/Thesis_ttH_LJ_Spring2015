@@ -1,0 +1,39 @@
+\documentclass[16pt,a4paper,openany,twoside]{book}
+\usepackage[pdftex]{graphicx}
+\usepackage[top=1in, bottom=1in, left=1.5in, right=1in]{geometry}
+\usepackage{setspace}
+\usepackage{tocbibind}
+\usepackage{lineno}
+\usepackage{definitions}
+\usepackage[nomain,acronym,toc,nopostdot,nonumberlist]{glossaries}
+\usepackage[pdftex,pdftitle={Dissertation},pdfauthor={Brian Patrick Francis}]{hyperref}
+\author{Brian Patrick Francis}
+
+\makeglossaries
+\input{acronyms}
+
+\global\def\@title{A Search for Evidence of New Particle Production in $pp$ Collisions at $\sqrt{s}$ = 8 TeV in the Two-Photon, Lepton, and $b$-jet Final State}
+
+\title{\@title}
+
+\begin{document}
+
+\frontmatter
+\input{title.tex}
+\doublespacing
+\input{abstract.tex}
+\input{signatures.tex}
+\tableofcontents
+\listoffigures
+\listoftables
+%\clearpage
+
+\mainmatter
+\linenumbers
+\input{introduction.tex}
+
+\bibliographystyle{lucas_unsrt}
+\bibliography{dissertation}
+\printglossary[type=\acronymtype,title=List of Acryonyms,toctitle=List of Acronyms]
+
+\end{document}
