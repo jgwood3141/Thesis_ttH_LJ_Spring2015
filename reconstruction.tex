@@ -63,7 +63,7 @@ seed or kinematic requirement on the \PT of the tack, as well as
 the transverse and longitudinal distance from the reconstructed
 vertex \cite{Fruhwirth:1987fm}.  The first iteration is seeded by
 three hits in the pixel detector.  The second, is seeded by two hits
-in the pixel detector and a pixel vertex, which is form when at least
+in the pixel detector and a pixel vertex, which occurs when at least
 four pixel tracks point back to a common origin.  The third iteration
 is seeded once again by three hits in the pixel detector, except with
 a looser minimum \PT cut.  The fourth iteration uses seeds from any
@@ -77,8 +77,8 @@ the fifth ring of the TEC.
 \section{Calorimeter Clustering}
 \label{calorimeter_clustering_overview}
 
-\par The clustering algorithm is used to detector the energy and
-director of stable, neutral particles such as photons and neutral
+\par The clustering algorithm is used to detect the energy and
+direction of stable, neutral particles such as photons and neutral
 hadrons \cite{CMS-PAS-PFT-09-001}.  It also separates the energy
 contributions from the neutral and charged hadrons, and provides an
 additional energy measurement for charged hadrons with very low or high
@@ -114,11 +114,12 @@ a $\phi$ symmetry, the of $\pi^{0}$ and$\eta^{0}$ meson resonances
 decaying into photons, and $W$ and $Z$ bosons into electrons.   
 
 \par Before installation at P5, the ECAL and HCAL were pre-calibrated
-using test beam.  In 2006, the ECAL was exposed to an electron beam with
+using a dedicated "test beam'' of known energy.  In 2006,
+the ECAL was exposed to an electron beam with 
 energies between 15 and 250 GeV \cite{Adzic:2008zza} at CERN.
 Additionally, intercalibrations between crystals were performed with 90
 and 120 GeV beams.  Also at CERN in 2006, the HCAL was calibrated,
-prior to installation using a beam of 50 GeV pions
+prior to installation, using a beam of 50 GeV pions
 \cite{Cankocak:1127315}. 
 
 \par Once both calorimeters were installed, the detectors were
@@ -128,7 +129,7 @@ campaign, and again with the CMS field on in 2008 during the CRAFT
 (Cosmic Run At Four Tesla) campaign.  Shortly after the CRAFT
 campaign, the LHC delivered 450 GeV proton beams to collimator targets
 upstream of the CMS detector, creating accelerator muons that are
-additionally used to calibrate the detector response.  The ECAL encap
+additionally used to calibrate the detector response.  The ECAL endcap
 energy resolution was improved from 7.6$\%$ to 6.3$\%$, and in the
 barrel, the intercalibrations from the test beam were validated at a
 $2\%$ level of agreement \cite{Malberti:1358839}.  The HCAL energy
@@ -147,7 +148,7 @@ HE\cite{Chatrchyan:1223950}.
 \par After an initial set of data collection three independent
 calibration methods are combined to determine the absolute energy
 scale and intercalibration coefficients for the crystals
-\cite{Chatrchyan:155414}.  The first method uses a large amount of
+\cite{Chatrchyan:1554142}.  The first method uses a large amount of
 data collected from minimum-bias trigger events, events which are
 dominated by glancing collisions and QCD jet production.  The
 processes that contribute to these events have final state particles
@@ -158,11 +159,11 @@ response in that $\eta$ ring, with the uncertainty on the average
 representing the uncertainty on the intercalibration coefficient.  The
 second method involves reconstructing the resonances of the $\pi^{0}$
 and $\eta^{0}$ mesons decaying to two photons and relying on the
-high-precision measurements from other experiment to determine the
+high-precision measurements from other experiments to determine the
 exact mass of the resonance.  Events near the resonance of these two
 particles are once again divided into rings of $\eta$, and averaged
-over the $\phi$ coordinate.  Decays of the $Z$ boson an electron pair
-is also used to determine the absolute scale (ADC counts/GeV) of the
+over the $\phi$ coordinate.  Decays of the $Z$ boson to an electron pair
+are also used to determine the absolute scale (ADC counts/GeV) of the
 crystals, once again relying on the higher-precision measurements of
 previous experiments for the location of the mass peak.  Finally,
 comparisons between the energy measured in the tracker and that
@@ -321,7 +322,7 @@ results the first 35 \pbinv of 7 TeV data.
 of electrons \cite{CMS-PAS-PFT-09-001}.  Electrons leaves hits in the
 tracker and deposits most of its energy into the ECAL, with the
 clustering widest in the $\phi$ direction due to bremsstrahlung.
-Electron tracks tend to be shorter and lose energy in the tracker do
+Electron tracks tend to be shorter and lose energy in the tracker due
 to bremsstrahlung, a highly non-linear process, that the Kalman
 fitter used in the track identification phase is not optimized for.
 These tracks are re-fit using the Gaussian Sum Filter (GSF) algorithm
@@ -390,7 +391,7 @@ and the remaining HCAL energy forms a "particle-flow neutral hadron'',
 with calibrations performed in the manner described in
 section \ref{energy_calibration_overview}.  In the case where the ECAL
 energy  is larger than the HCAL energy, both cluster energies form a
-particle-flow photon.  This is justified the observation that, in jets,
+particle-flow photon.  This is justified by the observation that, in jets,
 the neutral component of the hadronic energy only deposits 3$\%$ of
 the total jet energy in the ECAL, compared to 25$\%$ of the jet energy
 from photons.   
@@ -399,7 +400,7 @@ from photons.
 \subsection{Jet Reconstruction}
 \label{jet_reco_overview}
 
-\par After the formation of photons, charged and neutral hadrons, jets
+\par After the formation of photons, charged and neutral hadrons, and jets
 can be formed by clustering groups of these objects together based on
 their momentum weighted, spatial separation from one another.  This
 clustering procedure is performed with the anti-k$_{T}$ algorithm
@@ -432,11 +433,11 @@ $d_{ij}$ has a value $d_{ij} > \frac{1}{p_{Ti}^{2}}$ for all remaining
 pairs.  The parameter, $d_{ij}$, will be larger for two small \PT
 objects, when compared to a pair of equally spatially separated high
 \PT objects.  Thus, softer particles will cluster around harder
-objects before clustering amongst themselves.  No hard particles are
+objects before clustering amongst themselves.  If no hard particles are
 present, within the distance parameter, then the object will
 accumulate soft particles in a circle of radius R.  The tendency is to
 produce circular jets, but in the case where a soft \PT cluster intersects
-with a hard \PT cluster, objects the $1/p_{T}^{2}$ weighting will tend
+with a hard \PT cluster, the $1/p_{T}^{2}$ weighting will tend
 to favor clustering around the harder \PT object.  Figure
 \ref{fig:antiKt} shows an example of the results of an anti-kt
 algorithm with distance parameter R = 1.0, in the azimuthal-rapidity
@@ -466,7 +467,7 @@ within error bars up to 100 GeV, as shown in figure
 
 \par Tau leptons are unstable particles which decay via a weak
 interaction to lighter particles.  If it decays hadronically via a $W$
-boson to two quarks, the tau lepton can be reconstructed analyzing the
+boson to two quarks, the tau lepton can be reconstructed by analyzing the
 resulting jets that are clustered by the anti-kt algorithm.  Tau jets
 are characterized by the number of charged hadrons produced in the
 decay.  Since charge must be conserved, this results in one charged
