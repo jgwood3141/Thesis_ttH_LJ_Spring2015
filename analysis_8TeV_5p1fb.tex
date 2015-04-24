@@ -2,15 +2,15 @@
 \label{analysis_1_overview}
 
 \par The search for $t\bar{t}H$ production begins by identifying $pp$
-collisions consistent with the production of a top quark pair with
+collisions consistent with the production of a top-quark pair with
 additional $b$ jets.  Top quarks decay $\sim100\%$ of the time to a
 bottom quark and a $W$ boson, and the $W$ boson can decay either into
 a charged lepton and a neutrino or into a pair of quarks.  Since there are two $W$ bosons in
-the event, the decays of the $W$ bosons determine the specific top
-pair signatures recorded in the detector.  The decay of the two $W$
-bosons define the categorizations of $t\bar{t}$-like events as either
-all-hadronic, in the case of zero charged leptons; semi-leptonic, in
-the case of one charged lepton; and di-leptonic in the case of two
+the event, the decays of the $W$ bosons determine the specific
+top-pair signatures recorded in the detector.  The decay of the two
+$W$ bosons define the categorizations of $t\bar{t}$-like events as
+either all-hadronic, in the case of zero charged leptons;
+semi-leptonic, in the case of one charged lepton; and di-leptonic in the case of two
 charged leptons.  This analysis describes the Lepton+Jets (LJ)
 channel, where one of the $W$ bosons has decayed to an 
 electron or a muon and the corresponding neutrino, while the other $W$
@@ -25,7 +25,7 @@ reconstruction of the event, the LJ signal events contains six jets,
 four of which are $b$-tagged. However, to accommodate jets lost to
 detector acceptance and merging between separate partons, and the
 $b$-tagging efficiency, events with four or more jets and two or more
-$b$-tags are included in the signal region.  
+$b$ tags are included in the signal region.  
 
 \begin{figure}[h]
   \centering
@@ -39,7 +39,7 @@ $b$-tags are included in the signal region.
 \par The largest background contribution is $t\bar{t}+$jets
 production.  This process can be decomposed in terms of the flavor of
 the extra jets produced in the event.  For this analysis, the
-inclusive $t\bar{t}$jets process is broken into three sub-processes:
+inclusive $t\bar{t}$+jets process is broken into three sub-processes:
 $t\bar{t}+$ light flavor jets where one or more 
 of the jets is mistagged, $t\bar{t}+c\bar{c}$ and $t\bar{t}+b\bar{b}$.
 Smaller background contributions come from $W+$jets, $Z+$jets, single
@@ -62,19 +62,19 @@ background and the $t\bar{t}H$ signal.  For example, the recoil of
 the Higgs off of the $t\bar{t}$ system, the decay products of the top
 quarks from the $t\bar{t}H$ signal will have, on average, a slightly
 larger component of momentum transverse to the beam-line.
-Additionally, the lager number of authentic $b$-jets in $t\bar{t}H$
+Additionally, the larger number of authentic $b$-jets in $t\bar{t}H$
 events can be exploited through the likelihood value returned by a
 $b$-tagging algorithm for all of the jets in the event.  By
 themselves, none of these variables provide a large degree of
 discriminating power to separate the $t\bar{t}H$ signal from the
-large, and kinematically similar background.  Therefore, the
+large, and kinematically-similar background.  Therefore, the
 discriminating power of several variables is combined using a
 multivariate analysis technique (MVA), which is used to set upper
 limits on $t\bar{t}H$ production in the data set. 
 
 \par The following sections will describe the analysis that was
 carried out on the first 5 \fbinv~of data collected by the CMS
-detector.  This includes definitions of the simulated samples used to
+detector at 8 TeV.  This includes definitions of the simulated samples used to
 estimate the expected backgrounds in data, the event selection used to
 isolate the $t\bar{t}H$ signal, the application of MVA techniques,
 evaluation of systematic uncertainties, and upper limit setting on the
@@ -96,11 +96,11 @@ from reference \cite{Agashe:2014kda}.
 
 \par The first stage of event simulation for a given signal or
 background process is to calculate the probability that some set
-initial state particles with a certain momentum will create a final
+of initial state particles with a certain momentum will create a final
 state of particles with a certain momentum.  For example, in the case of
 the \ttH signal, this is the probability that two protons traveling
 towards each other along the z-axis (beam-line), each with a given
-energy and momentum, will produce a top quark pair and a Higgs boson,
+energy and momentum, will produce a top-quark pair and a Higgs boson,
 each with some momentum vector, $\hat{p}_{t}$, $\hat{p}_{\bar{t}}$,
 $\hat{p}_{H}$, which points into the hermetic CMS detector.  As
 discussed in section \ref{qft_overview}, this probability is calculated
@@ -108,7 +108,7 @@ by examining the Lagrangian of the theory describing the process and
 calculating its scattering amplitude, to some order in perturbation
 theory, using the Feynman rules derived from the Lagrangian.  The
 scattering amplitude is a multi-dimensional probability function,
-which depends on the initial and final state momentum of the particles
+which depends on the initial- and final-state momenta of the particles
 in the process.  Thus, given some initial state momentum, $p_{i}$, it tells you
 the probability to produce a final state particle with momentum
 $p_{f}$.  It is understandable that the scattering amplitude is
@@ -132,7 +132,7 @@ results of several experiments over the past decades.
 \par Event generator algorithms are computer programs
 that, given a Lagrangian of particle theory, will calculate the
 matrix element for a given process.  Then, the generator is provided
-with values of the momentum of the initial state particles.  For
+with values of the momenta of the initial state particles.  For
 protons, this would the beam energy of the LHC.  To assign momentum
 values to the constituent quarks or gluons that actually participate
 in the interaction, random values are sampled from the probability
@@ -144,10 +144,10 @@ matrix element (ME).  The process of randomly sampling a probability
 function, in order to conduct a calculation, is known as a Monte Carlo
 sampling technique.    
 
-\par In the case where final state particles are quarks or gluons,
+\par In the case where final-state particles are quarks or gluons,
 also known as partons, an additional calculation is necessary to
 create the physical hadron states.  First, the decay sequence of each
-parton is calculated until the decay products reach a user defined
+parton is calculated until the decay products reach a user-defined
 value, known as the hadronization scale.  This decay sequence is
 referred to as the parton shower (PS), since each parton creates a
 multitude, or a shower, of additional partons.  Once the parton shower
@@ -163,7 +163,7 @@ generation is to simulate the response of the CMS detector when this
 process occurs at the interaction point where the LHC beams are made
 to collide.  The Geant 4 detector simulation framework is used to
 create a model of each and every detector element, electronic readout,
-and mechanical support structures that compose CMS.  Geant 4 also
+and mechanical support structures that compose CMS \cite{Schalicke:2011zz}.  Geant 4 also
 describes how energy is deposited into the different types of material
 as a particle passes through each detector element, simulating the
 response of each element to the presence of a particle in the 
@@ -173,7 +173,7 @@ that read-out the detector elements is also simulated.
 \par The final stage the generation of an event is the reconstruction
 of the simulated detector signals into physics objects.  This process
 is described in detail in the previous chapter.  It proceeds with
-simulated, instead of real detector signals.  
+simulated, instead of real, detector signals.  
 
 \par The entire event simulation, reconstruction, and subsequent
 analysis is implemented in a software framework that is known as CMS
@@ -213,7 +213,7 @@ SingleElectron, Run2012B, PromptReco & 193834--196531 & 4.21 pb$^{-1}$ \\
 \subsection{Signal Samples}
 \label{signal_sample_overview}
 
-\par The $t\bar{t}H$ signal is modeled using the Pythia Monte Carlo
+\par The $t\bar{t}H$ signal is modeled using the leading order Pythia Monte Carlo
 generator.  Signal events were generated privately using the same
 conditions and configuration as the "Summer'' MC campaign, which
 generated the background samples used in this analysis and is a
@@ -256,7 +256,7 @@ Mass & Dataset & Cross Sect. \\
 
 \par In order to estimate the rate and kinematic behavior of the
 backgrounds, this analysis primarily uses Monte Carlo (MC) samples
-from the "Summer12'' MC campaign.  Most of the samples are
+from the "Summer12'' MC campaign, based on leading order event generators.  Most of the samples are
 generated either with the Madgraph tree-level matrix element generator
 matched to Pythia for the parton shower, or with the NLO
 generator Powheg combined with Pythia.  These samples are
@@ -279,13 +279,13 @@ $t\bar{t}+Z$ & TTZJets, Madgraph & 0.208 pb \\
 $W+$jets & WJets to Leptons, Madgraph & 36257.2 pb \\
 \hline
 $Z/\gamma^* +$~jets & & \\
-$M\_{\ell\ell} > $50 GeV/c$^2$ & DYJets to Leptons $M_{\ell\ell}>$50, Madgraph & 3503.17 pb \\
-10 GeV/c$^2 < M\_{\ell\ell} < $50 GeV/c$^2$ & DYJets to Leptons
+$M_{\ell\ell} > $50 GeV/c$^2$ & DYJets to Leptons $M_{\ell\ell}>$50, Madgraph & 3503.17 pb \\
+10 GeV/c$^2 < M_{\ell\ell} < $50 GeV/c$^2$ & DYJets to Leptons
                                               $10<M_{\ell\ell}<50$, Madgraph & 860 pb \\
 \hline
 Single $t$ & & \\
-$s$\-channel & T, s\-channel, Powheg & 3.79 pb\\
-$t$\-channel & T, t\-channel, Powheg &  56.4 pb \\
+$s$-channel & T, s\-channel, Powheg & 3.79 pb\\
+$t$-channel & T, t\-channel, Powheg &  56.4 pb \\
 $tW$ & T, tW\-channel, Powheg & 11.1 pb \\
 \hline
 Single $\bar{t}$ & & \\
@@ -310,13 +310,13 @@ $ZZ$ & ZZ, Pythia6 & 7.7 pb \\
 \par During 2012 data collection, the LHC provided increasingly
 large instantaneous luminosities to the CMS experiment.  Consequently,
 the average number of overlapping events reconstructed in single
-detector readout window has also increased.  When these overlapping
+detector readout window also increased.  When these overlapping
 events, known as pileup events, occur within the same bunch crossing,
-which is referred to as "in-time'' pileup.  Alternatively,
+this is referred to as "in-time'' pileup.  Alternatively,
 "out-of-time'' pileup, comes from energy deposits in the detector from
 previous bunch crossings and from very early arrivals of particles
 from the forthcoming bunch crossing.  Pileup events can affect many
-aspects of the reconstruction a more interesting event, such as the
+aspects of the reconstruction of a more interesting event, such as the
 degradation of lepton isolation and jet energy resolution.  The
 simulated samples used in the analysis must also have the same
 distribution of pileup events as what was measured in the data.
@@ -326,7 +326,7 @@ analysis, the average amount of expected pileup was unknown.  Events
 were thus simulated with a conservatively large estimate of the pileup
 distribution, so that if the measured data revealed a smaller average
 value, the simulation could be reweighted to match the data.  
-For the simulation, the number of interactions is a user defined value
+For the simulation, the number of interactions is a user-defined value
 added to every generated event.  For the data, the number of pileup
 interactions for each unit of time depends on the instantaneous luminosity for each bunch pair and the
 total inelastic cross section, $\sigma_{inelastic}$, of the proton.
@@ -382,7 +382,7 @@ H_{T} = \sum_{i}^{jets} p_{T}^{i}
 
 \noindent The effect makes the data have a softer $p_{T}$ spectrum
 than the simulations.  The same effect was observed in 7 TeV data
-as well.  It was present, even after employing several sophisticated
+as well.  It was present even after employing several sophisticated
 reconstruction techniques designed to mitigate pileup effects.  These
 techniques included the removal of charged hadrons in the
 particle-flow algorithm, not associated with the primary vertex and
@@ -394,7 +394,7 @@ measured in the data.
    \includegraphics[width=0.30\textwidth]{Figures/Analysis_1_Diagrams/d2MCPlots_Ht_cut10_4J_2T_lowNPV_Combined.pdf}
    \includegraphics[width=0.30\textwidth]{Figures/Analysis_1_Diagrams/d2MCPlots_Ht_cut11_4J_2T_midNPV_Combined.pdf}
    \includegraphics[width=0.30\textwidth]{Figures/Analysis_1_Diagrams/d2MCPlots_Ht_cut12_4J_2T_highNPV_Combined.pdf}
-   \caption{$H_{T}$ distribution for 8 TeV lepton plus jet events with $\geq 4 jets$ and $\geq 2 tags$ shown
+   \caption{$H_{T}$ distribution for 8 TeV lepton plus jet events with $\geq 4$ jets and $\geq 2$ tags shown
    for different amounts of pileup. The left-hand plot shows low pileup, the middle plot shows
    medium pileup, and the right-hand plot shows high pileup.}
    \label{fig:HTreweight}
@@ -446,7 +446,7 @@ the slope is gone.
    \includegraphics[width=0.45\textwidth]{Figures/Analysis_1_Diagrams/d2MCPlots_Ht_cut0_4JIncl_2TIncl_Combined.pdf}
    \includegraphics[width=0.45\textwidth]{Figures/Analysis_1_Diagrams/d2MCPlots_Ht_cut0_4JIncl_2TIncl_Combined_HtWgt.pdf}
    \caption{$H_{T}$ distribution for 8 TeV lepton plus jet events with
-   $\geq 4 jets$ and $\geq 2 tags$. The left-hand plot shows the
+   $\geq 4$ jets and $\geq 2$ tags. The left-hand plot shows the
    distribution before correction. The right-hand plot shows the
    distribution after correction. Note that the ratio in the right-hand
    plot is flatter than the left-hand plot.}
@@ -487,11 +487,11 @@ event is required to pass the following filters:
     spurious signals from the HCAL barrel and endcap sub-detectors which
     are not associated with particles measured in a collision event. 
   \item HCAL laser filter - ensures that data is not taken
-    simultaneous with the laser calibration system
+    simultaneously with the laser calibration system
   \item ECAL dead cell trigger primitive (TP) filter - removes dead
     or noisy ECAL cells from being used in the reconstruction, these
     compose $<1\%$ of the total crystals in the ECAL
-  \item Tracking failure - designed to catch events with too few tracks
+  \item Tracking failure - designed to catch events with too-few tracks
   \item Noisy SCs in EE - new filter from the ECAL Detector
     Performance Group (PDG), and validated by the MET Physics Object
     Group (POG)
@@ -499,7 +499,7 @@ event is required to pass the following filters:
 
 \noindent which are described in ~\cite{METfilters}.
 
-\par Additionally, beam scraping events are filtered based on the fraction
+\par Additionally, beam-scraping events are filtered based on the fraction
 of good tracks.  At least 25\% of tracks are required to be of high
 purity.  Finally, every data event must contain at least one primary
 vertex (PV) that passes the following selection:
@@ -565,15 +565,15 @@ Table~\ref{tab:TightLooseMuTable}.  The cuts are defined as follows:
     with hits used in the muon track reconstruction
   \item ${X}^{2}$ of track fit - the reduced $\chi^{2}$ (raw
     $\chi^{2}$/Number of Degrees of Freedom in the fit), typically a
-    value of 1 indicates the fit is describes the data well 
-  \item $N_{layers}($pixel$)$ - the number of layers in the inner
-    pixel detector with hits used in the muon track reconstruction
+    value of 1 indicates the fit describes the data well 
+  \item $N_{layers}($pixel$)$ - the number of hit-containing layers in the inner
+    pixel detector used in the muon track reconstruction
   \item $N_{segments}(\mu)$ - the number of segments in the muon
     chambers used to the reconstruct the muon tracks
-  \item $|d0($BS$)|$ - the absolute value of the transverse distance
+  \item $|d_{0}($BS$)|$ - the absolute value of the transverse distance
     of the extrapolated muon track to the primary vertex, as
     calculated from the beam spot (BS)
-  \item $|dZ($BS$)|$ - the absolute value of the longitudinal distance
+  \item $|d_{Z}($BS$)|$ - the absolute value of the longitudinal distance
     of the extrapolated muon track to the primary vertex
 \end{itemize}
 
@@ -664,16 +664,16 @@ $|dZ(PV)|$ & \textless 1 cm & \\
 \subsection{Lepton selection and trigger efficiencies}
 \label{trigger_efficiency_overview}
 
-\par The cumulative reconstruction efficiency of id+isolation+trigger
-has been calculated from data, as a function of pT and eta, as
+\par The cumulative reconstruction efficiency of ID+isolation+trigger
+has been calculated from data, as a function of $p_{T}$ and $\eta$, as
 shown in figure ~\ref{fig:effSFHLT} for electrons and muons.  In order
 to reproduce the same the same response in the simulations as found in
 data, an event-by-event scale factor is applied to correct for this
 difference in efficiency.  
 
-\par The efficiency in data was measured by selected events with two
+\par The efficiency in data was measured by selecting events with two
 tight muons, or two tight electrons with an invariant mass in a range
-between 70 and 130 GeV.  This is centered on the $Z$ boson resonance,
+between 70 and 130 GeV.  This is centered on the $Z$-boson resonance,
 and ensures that the selected leptons are authentic.  The two leptons
 are additionally required to have opposite charge, which is measured
 by the direction of the curvature of their tracks in the magnetic
@@ -699,7 +699,7 @@ $\eta$ to remove any kinematic dependence on lepton efficiency.
 \par The combined ID, isolation, and trigger scale factor
 uncertainty is evaluated by looking at the variation of the scale
 factor as a function of parameters besides $p_T$ and $\eta$, such as
-pileup and $b$-tag scale factor reweighting.  A flat uncertainty of 4$\%$
+pileup and $b$-tag scale factor reweighting (described below).  A flat uncertainty of 4$\%$
 covers the variations that are observed, and is thus adopted as a
 conservative estimate of the uncertainty on the combined lepton
 reconstruction efficiency.  
@@ -708,7 +708,7 @@ reconstruction efficiency.
 \label{jet_selection_overview}
 
 \par As described in the previous chapter, jets are reconstructed with
-the anti-KT clustering algorithm~\cite{Cacciari:2008gp}, with a
+the anti-kt clustering algorithm~\cite{Cacciari:2008gp}, with a
 distance parameter of of 0.5, starting from the set of objects
 reconstructed by the particle flow algorithm
 \cite{CMS-PAS-PFT-09-001}. Non-isolated leptons, not associated
@@ -764,8 +764,8 @@ charged hadrons that are not associated with the jet from the energy
 cluster.  The next stage, L2 correction is a relative correction to
 make the measured jet response flat in $\eta$.  The third stage, L3,
 is an absolute correction to the measured $p_T$ of a jet in order to
-match the simulated jet $p_{T}$ created using generator level input
-and a similar jet clustering algorithm. The L2 and L3 corrections are
+match the simulated jet $p_{T}$ created using generator-level input
+and a similar jet-clustering algorithm. The L2 and L3 corrections are
 calculated using Monte Carlo, and thus an fourth correction factor,
 the L2L3 residual correction is applied that fixes the discrepancies
 between Monte Carlo and data.  The correction factors are described in
@@ -804,7 +804,7 @@ $|\eta|$ & Data/MC Ratio \\ \hline
 combined secondary vertex (CSV) algorithm \cite{Weiser:927399}.  It
 relies on the superior ability of the inner tracker to reconstruct
 secondary vertices, which are the characteristic signature of
-$b$-quark decays.  Tracks are selected is they meet the following
+$B$-hadron decays.  Tracks are selected if they meet the following
 requirements: 
 \begin{itemize}
   \item At least 8 hits in the pixel and silicon tracker, with at
@@ -868,7 +868,7 @@ quarks respectively.  $f^{b,c,q}(\alpha)$ is the probability for a
 quark flavor $b,c,$ or $q$, to fall into category $\alpha$.
 $f_{\alpha}^{b,c,q}(x_{i})$ is the probability density
 function of the variable $x_{i}$ in category $\alpha$ for quark flavor
-$b,c,$ or $q$.  The combined discriminate is defined as
+$b,c,$ or $q$.  The combined discriminant is defined as
 
 \begin{equation}\label{eq:csv_disc}
 d = f_{BG}(c)\times\frac{\mathcal{L}^{b}}{\mathcal{L}^{c} +
@@ -884,7 +884,7 @@ quarks in non-b jets.
 than 0.679, which is the medium working point defined by the BTag
 Physics Object Group (POG)~\cite{btagOP}, defined in order to produce
 a light-flavor mistag rate at $\sim1\%$, with the reconstruction
-efficiency for real b-jets at $\sim70\%$.  
+efficiency for real $b$ jets at $\sim70\%$.  
 
 \par Additionally, it is necessary to account for differences in the
 measured efficiency for $b$-tagging jets between data and
@@ -933,7 +933,7 @@ of the discriminate range).
 \subsection{Lepton + Jets Selection}
 \label{LJ_selection_overview}
 
-\par The final Lepton+Jets (LJ) selection is finally carried out by
+\par The final Lepton+Jets (LJ) selection is carried out by
 requiring that events have exactly one tight lepton ($e$ or
 $\mu$), and at least four jets. Events with any additional loose or
 tight leptons are vetoed so this analysis can later be combined with a
@@ -958,7 +958,7 @@ are $b$-tagged, make up two categories, which are used only as a
 control region to validate comparisons between collected data and
 simulations.  The number of $t\bar{t}H$ events increases with the
 number of jets and tags because the largest branching fraction is $H$
-to $b\bar{b}$.  Data to monte carlo comparisons of the jet and $b$-tag
+to $b\bar{b}$.  Data to Monte Carlo comparisons of the jet and $b$-tag
 multiplicities are shown in figure \ref{fig:njetsntags_LJ}.  The event
 yields for the $\mu$+jets and $e$+jets channels are shown in tables
 \ref{tab:dataMC_LJeventyield_mu} and \ref{tab:dataMC_LJeventyield_ele}
@@ -1095,11 +1095,11 @@ $\chi^{2}$ minimization algorithm.
 \par An artificial neural network (ANN), most generally speaking, is
 any collection of interconnected, simulated "neurons'' which produce a
 certain response to a set of input variables \cite{Hocker:2007ht}.  A
-simulated neuron, is some independent function, which takes several
+simulated neuron is some independent function which takes several
 input variables, performs a mathematical operation, and passes the
 result to one or more other neurons.  In the most general case, a set
 of $n$ input variables, connected to a single output, will produce on
-the order $n^{2}$ connections.  For case of using the network to
+the order of $n^{2}$ connections.  For case of using the network to
 discriminate between signal from background (a yes or no answer on
 whether an event is signal-like), the ANN is mapping an
 $n$-dimensional space onto a one-dimensional space.  
@@ -1215,7 +1215,7 @@ train the CFMlpANN.
  \end{center}
 \end{figure}
 
-\par It is possible to bias the CFMlpANN response, by overtraining
+\par It is possible to bias the CFMlpANN response by overtraining
 it.  This is the case where the weights are over-adjusted to correctly
 classify events in the training sample.  If overtrained, small
 fluctuations in the input variable distributions of authentic signal
