@@ -3,9 +3,9 @@
 
 \par Charged and neutral hadrons in the form of jets, missing
 transverse energy (MET), photons, electrons, muons, and tau leptons
-are reconstructed at CMS using the particle flow event-reconstruction
+are reconstructed at CMS using the particle-flow event-reconstruction
 algorithm \cite{CMS-PAS-PFT-09-001}.  The algorithm is based on on a
-three step process of identifying charged particle tracks using the
+three-step process of identifying charged particle tracks using the
 muon chambers and silicon tracker, identifying clusters of energy in
 the ECAL and HCAL, and linking the tracks to the calorimeter
 clusters.  The calorimeter energy deposits were calibrated with test
@@ -14,7 +14,7 @@ collision data.  The algorithm constructs muons by fitting the tracks
 formed between the muon chambers, pixel and silicon trackers.
 Electrons have tracks from the pixel and silicon tracker matched to
 the ECAL, with a minimum energy deposited in the HCAL.  Jets are
-formed from tracks, ECAL, and HCAL clusters falling with a conical
+formed from tracks, ECAL, and HCAL clusters falling within a conical
 angle.  The identification of one, three, or larger odd number of
 tracks, and the majority of the energy contained in a small cone size,
 allows a jet to be tagged as a hadronically decaying tau lepton.
@@ -58,7 +58,7 @@ minimize the mean-square estimation of the error.  The 5 helical
 trajectory parameters are extracted, and tracks with poor fits are
 discarded.    
 
-\par A total a six iterations is used, each with a different starting
+\par A total of six iterations are used, each with a different starting
 seed or kinematic requirement on the \PT of the tack, as well as
 the transverse and longitudinal distance from the reconstructed
 vertex \cite{Fruhwirth:1987fm}.  The first iteration is seeded by
@@ -110,7 +110,7 @@ scintillator light and photodetector current to the energy deposited
 in the calorimeter by the particle traversing it.  This is done by
 exposing the crystals to particles of a known energy, using large
 samples of cosmic ray muons, by measuring minimum-bias events assuming
-a $\phi$ symmetry, the of $\pi^{0}$ and$\eta^{0}$ meson resonances
+a $\phi$ symmetry, the of $\pi^{0}$ and $\eta^{0}$ meson resonances
 decaying into photons, and $W$ and $Z$ bosons into electrons.   
 
 \par Before installation at P5, the ECAL and HCAL were pre-calibrated
@@ -128,7 +128,7 @@ de-energized during the CRUZET (Cosmic RUn at ZEro Tesla) data taking
 campaign, and again with the CMS field on in 2008 during the CRAFT
 (Cosmic Run At Four Tesla) campaign.  Shortly after the CRAFT
 campaign, the LHC delivered 450 GeV proton beams to collimator targets
-upstream of the CMS detector, creating accelerator muons that are
+upstream of the CMS detector, creating accelerated muons that were
 additionally used to calibrate the detector response.  The ECAL endcap
 energy resolution was improved from 7.6$\%$ to 6.3$\%$, and in the
 barrel, the intercalibrations from the test beam were validated at a
@@ -214,7 +214,7 @@ E_{\text{calib}} = a + b(E, \eta)E_{ECAL} + c(E, \eta)E_{HCAL}
 \end{equation} 
 
 \noindent The coefficients, a, b, and c are determined through a
-$\chi^{2}$ minimization procedure over each bin of energy, minimizing
+$\chi^{2}$-minimization procedure over each bin of energy, minimizing
 the difference between the reconstructed and true energies and solving
 for the parameters a, b, and c.  Figure \ref{fig:hcal_calibration}
 shows the resulting HCAL energy resolution as a function of energy,
@@ -226,22 +226,23 @@ and the values of the coefficients a, b, and c.
 
 \par Once clusters are formed in the ECAL and HCAL barrels and
 endcaps, they are associated with nearby tracks in the pixel and
-silicon tracker in the phase of the particle-flow algorithm known as
+silicon tracker in the step of the particle-flow algorithm known as
 linking \cite{CMS-PAS-PFT-09-001}.  Single particles are formed out of
 the tracks and calorimeter clusters without double counting
 contributions from different detectors, forming "blocks'' of linked
 elements.  Due to the high granularity of each sub-detector, blocks of
-two-four elements are typical.  
+two to four elements are typical.  
 
 \par The linking procedure between pixel and silicon strip tracks and
-the calorimeter deposits occurs in a three steps: extrapolating the
+the calorimeter deposits occurs in three steps: extrapolating the
 track to the ECAL preshower (PS); then to the ECAL to a depth
 corresponding to the maximum longitudinal shower profile; and finally
 to the HCAL to a depth corresponding to one interaction length.  A
 track is then linked to a cluster if it falls within the cluster
 boundaries.  One HCAL cluster may be associated to many tracks, but
 each track can only be associated with a single cluster, determined as
-the track with the shortest distance.  For the ECAL, one track may be
+the track with the shortest distance to the center of the HCAL cluster
+in the case of many candidates.  For the ECAL, one track may be
 associated with many energy clusters, since they may have originated
 from hadronic shower fluctuations, so links to tracks should be
 preserved to avoid double counting the hadron energy.  In order to
@@ -278,12 +279,12 @@ algorithm begins by identifying tracks in the pixel and silicon strip
 detectors that have been linked to tracks in the muon chambers, and
 fit with a muon trajectory with a minimum $\chi^{2}$.  Additionally, it
 is required that muon track that is fit with both muon chambers,
-pixel, and silicon tracker information is compatible within 3 sigma,
+pixel, and silicon tracker information is compatible, within 3 sigma,
 to a track fit with the pixel and silicon tracker information alone.
 When the "particle-flow'' muon is removed from the collection of
-candidate blocks, the muon tracks, and based on studies from the CRAFT
-data run, 3 (0.5) GeV $\pm 100\%$ is removed from the HCAL (ECAL)
-cells that the muon traverses.  
+candidate blocks, 3 (0.5) GeV $\pm 100\%$ is removed from the HCAL (ECAL)
+cells that the muon traverses, based on studies from the CRAFT
+data run.  
 
 \begin{figure}{h}
     \centering
@@ -319,8 +320,8 @@ results the first 35 \pbinv of 7 TeV data.
 \label{electron_reco_overview}
 
 \par The next stage in particle-reconstruction is the identification
-of electrons \cite{CMS-PAS-PFT-09-001}.  Electrons leaves hits in the
-tracker and deposits most of its energy into the ECAL, with the
+of electrons \cite{CMS-PAS-PFT-09-001}.  Electrons leave hits in the
+tracker and deposits most of their energy into the ECAL, with the
 clustering widest in the $\phi$ direction due to bremsstrahlung.
 Electron tracks tend to be shorter and lose energy in the tracker due
 to bremsstrahlung, a highly non-linear process, that the Kalman
@@ -330,7 +331,7 @@ These tracks are re-fit using the Gaussian Sum Filter (GSF) algorithm
 trajectory of the electron due to bremsstrahlung, extending the
 linking to ECAL clusters in the $\phi$ direction.  Blocks that have
 GSF tracks linked to ECAL clusters, including clusters identified as
-bremsstrahlung photons, and additionally linked to a HCAL cluster with
+bremsstrahlung photons, and additionally linked to an HCAL cluster with
 a much smaller energy deposition than in the ECAL are then identified
 as a "particle-flow electron''.  
 
@@ -369,10 +370,10 @@ electrons were commissioned from $W$ boson decays, shown in figure
 \par Charged hadrons are reconstructed next in the particle flow
 algorithm \cite{CMS-PAS-PFT-09-001}.  Tracks linked to both ECAL and
 HCAL energy deposits give rise to "particle-flow charged hadrons'' if
-calorimeter energy is compatible measured from the curvature of the
+calorimeter energy is compatible to what is measured from the curvature of the
 tracks in the pixel and silicon detector.  A fit is then performed
 between all of the tracks and the HCAL energy clusters to determine an
-optimally measured momentum.  In the case where there is only one
+optimally-measured momentum.  In the case where there is only one
 track, this fit reduces to a weighted average between the track and
 HCAL energy clusters.  
 
@@ -434,7 +435,7 @@ pairs.  The parameter, $d_{ij}$, will be larger for two small \PT
 objects, when compared to a pair of equally spatially separated high
 \PT objects.  Thus, softer particles will cluster around harder
 objects before clustering amongst themselves.  If no hard particles are
-present, within the distance parameter, then the object will
+present within the distance parameter, then the object will
 accumulate soft particles in a circle of radius R.  The tendency is to
 produce circular jets, but in the case where a soft \PT cluster intersects
 with a hard \PT cluster, the $1/p_{T}^{2}$ weighting will tend
@@ -465,17 +466,17 @@ within error bars up to 100 GeV, as shown in figure
 \subsubsection{Hadronic Tau Reconstruction}
 \label{tau_reco_overview}
 
-\par Tau leptons are unstable particles which decay via a weak
-interaction to lighter particles.  If it decays hadronically via a $W$
-boson to two quarks, the tau lepton can be reconstructed by analyzing the
-resulting jets that are clustered by the anti-kt algorithm.  Tau jets
-are characterized by the number of charged hadrons produced in the
-decay.  Since charge must be conserved, this results in one charged
-hadron being produced $\sim85\%$ of the time, known as a
-"one-pronged'' decay, and three charged hadrons being produced
-$\sim15\%$ of the time, known as a "three-pronged'' decay.  Thus, a
-tau jet is identified as a jet with only 1 or 3 tracks associated with
-the calorimeter cluster.  Additionally, the jets from hadronic tau
+\par Tau leptons are unstable particles which decay via the weak
+interaction.  If the resulting $W$ boson decays hadronically to two
+quarks, the tau lepton can be reconstructed by analyzing the resulting
+jets that are clustered by the anti-kt algorithm.  Tau jets are
+characterized by the number of charged hadrons produced in the decay.
+Since charge must be conserved, this results in one charged hadron
+being produced $\sim85\%$ of the time, known as a "one-pronged''
+decay, and three charged hadrons being produced $\sim15\%$ of the
+time, known as a "three-pronged'' decay.  Thus, a tau jet is
+identified as a jet with only 1 or 3 tracks associated with the
+calorimeter cluster.  Additionally, the jets from hadronic tau 
 decays tend to have their energy more collimated than jets produced
 from quarks or gluons.  Jets are clustered twice, using two different
 distance-parameters.  The ratio of energies of the smaller to the larger of the
@@ -490,13 +491,13 @@ tagged as a hadronic tau jet.
 \par Jet that originate from $b$-quarks have unique characteristics
 that allow them to be distinguished from jets originating from other
 quarks or gluons. This identification process is known as
-$b$-tagging.  Several algorithms exist to identify $b$-jets, since
+$b$ tagging.  Several algorithms exist to identify $b$ jets, since
 there are many kinematic variables that distinguish them from other
-jets.  Due to the heavier nature of the $b$-quark, $b$-jets have
+jets.  Due to the heavier nature of the $b$ quark, $b$ jets have
 a larger transverse momentum compared to lighter-flavor quarks.
 Since it belongs to the third quark generation, it is much more likely
 to find a non-prompt lepton embedded in the jet.  Muons are especially
-useful to tag $b$-jets since the information they leave in the tracker
+useful to tag $b$ jets since the information they leave in the tracker
 can used to easily identify if it came from prompt decay or not.  
 
 \begin{figure}[h]
@@ -508,14 +509,14 @@ can used to easily identify if it came from prompt decay or not.
   \cite{CMS:BTaggingCartoon}. } \label{fig:bTagging}
 \end{figure}
 
-\par The most important characteristic of the $b$-quark is its
-relatively long lifetime compared to lighter-flavor quarks.  The
-consequence is that a $b$-meson will travel a very small, but
+\par The most important characteristic of the $b$ quark is its
+relatively long lifetime compared to light-flavor quarks.  The
+consequence is that a $B$-hadron will travel a very small, but
 observable distance within the tracker before it decays, forming a
 secondary vertex.  The distance and uncertainty measured on the
 distance between the primary and secondary vertex is then used as
 discriminating variables to tag $b$-jets.  Figure \ref{fig:bTagging}
-shows a cartoon of a $b$-jet creating a secondary vertex after
+shows a cartoon of a $b$ jet creating a secondary vertex after
 traveling some distance from the primary vertex.   
 
 \subsection{Missing Transverse Energy Reconstruction}
@@ -540,7 +541,7 @@ defined as
 event, and $\vec{p_{Ti}}$ is the vector sum of their transverse
 momentum.  
 
-\par The particle-flow algorithm for reconstructing MET was commission
+\par The particle-flow algorithm for reconstructing MET was commissioned
 in 2010 with 7 TeV data \cite{CMS-PAS-PFT-10-002}.  Minimum-bias
 collisions and QCD multi-jet production are processes that produce no
 real MET.  Therefore, a sample of these events were collected,
